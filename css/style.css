@@ -43,6 +43,7 @@ body {
   color: var(--text-color);
   background-color: var(--body-color);
   -webkit-font-smoothing: antialiased;
+  transition: 0.6s;
 }
 
 .title {
@@ -215,6 +216,7 @@ nav ul.grid {
   gap: 4rem;
 }
 
+
 /* toggle menu */
 .toggle {
   color: var(--base-color);
@@ -297,7 +299,7 @@ nav.show div.icon-close {
   padding: 3.625rem 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
-  border-radius: .25rem .25rem 0 0;
+  border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
 }
 
@@ -306,7 +308,6 @@ nav.show div.icon-close {
   margin-bottom: 1.5rem;
   font-size: 5rem;
   color: var(--base-color);
-  
 }
 
 .card .title {
