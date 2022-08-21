@@ -21,10 +21,12 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
         rel="stylesheet">
 
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
-
+    <!-- MENU -->
     <header id="header" class="scroll">
         <nav class="container ">
             <a href="#" class="logo">
@@ -47,6 +49,7 @@
     </header>
 
     <main>
+        <!-- HOME -->
         <section class="section" id="home">
             <div class="container grid">
                 <div class="image">
@@ -63,6 +66,7 @@
 
         <div class="divider-1"></div>
 
+        <!-- SERVICES -->
         <section class="section" id="services">
             <div class="container grid">
                 <header>
@@ -71,44 +75,129 @@
                         ex.</p>
                 </header>
                 <div class="cards  grid">
-                <div class="card">
-                    <i class="icon-briefcase"></i>
-                    <h3 class="title">Exemplo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien hendrerit, commodo
-                        massa quis, ultrices ex. Cras diam odio.</p>
-                </div>
-                <div class="card">
-                    <i class="icon-briefcase"></i>
-                    <h3 class="title">Exemplo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien hendrerit, commodo
-                        massa quis, ultrices ex. Cras diam odio.</p>
-                </div>
-                <div class="card">
-                    <i class="icon-briefcase"></i>
-                    <h3 class="title">Exemplo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien hendrerit, commodo
-                        massa quis, ultrices ex. Cras diam odio.</p>
-                </div>
+                    <div class="card">
+                        <i class="icon-briefcase"></i>
+                        <h3 class="title">Exemplo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien hendrerit,
+                            commodo
+                            massa quis, ultrices ex. Cras diam odio.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-briefcase"></i>
+                        <h3 class="title">Exemplo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien hendrerit,
+                            commodo
+                            massa quis, ultrices ex. Cras diam odio.</p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-briefcase"></i>
+                        <h3 class="title">Exemplo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien hendrerit,
+                            commodo
+                            massa quis, ultrices ex. Cras diam odio.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <div class="divider-2"></div>
 
+        <!-- TOUR -->
         <section class="section" id="tour">
-            <div class="container grid"> Passeios</div>
+            <div class="container grid">
+                <header>
+                    <h2 class="title">Passeios</h2>
+                </header>
+                <div class="tours swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="tour swiper-slide">
+                            <div class="card_image ">
+                                <h2 class="title">Teleférico <br> Aparecida</h2>
+                                <a href="https://www.tripadvisor.com.br/Attraction_Review-g780033-d9601890-Reviews-Teleferico_Aparecida-Aparecida_State_of_Sao_Paulo.html"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-zoom-in"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="tour swiper-slide">
+                            <div class="card_image2 ">
+                                <h2 class="title">Aquário <br> Aparecida</h2>
+                                <i class="icon-zoom-in"></i>
+                            </div>
+                        </div>
+
+                        <div class="tour swiper-slide">
+                            <div class="card_image3 ">
+                                <h2 class="title">Porto Itaguaçu<br>Aparecida</h2>
+                                <i class="icon-zoom-in"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
         </section>
+
+        <div class="divider-1"></div>
+
+        <!-- TOURISM -->
+        <section class="section" id="tour">
+            <div class="container grid">
+                <header>
+                    <h2 class="title">Turismo</h2>
+                </header>
+                <div class="tours swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="tour swiper-slide">
+                            <div class="card_image-tour ">
+                                <i class="icon-Church"></i></a>
+                                <h2 class="title">Aparecida</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien hendrerit, commodo massa quis, ultrices ex. Cras diam odio.</p>
+                            </div>
+                        </div>
+
+                        <div class="tour swiper-slide">
+                            <div class="card_image-tour2 ">
+                                <i class="icon-Park"></i>
+                                <h2 class="title">Guaratinguetáa</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien hendrerit, commodo massa quis, ultrices ex. Cras diam odio.</p>
+                            </div>
+                        </div>
+
+                        <div class="tour swiper-slide">
+                            <div class="card_image-tour3 ">
+                                <i class="icon-Mountain"></i>
+                                <h2 class="title">Cunha</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien hendrerit, commodo massa quis, ultrices ex. Cras diam odio.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-2"></div>
+
     </main>
 
     <footer>
 
     </footer>
 
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-
-
+    <!-- MAIN.JS -->
     <script src="./js/main.js"></script>
-
 
 </body>
 
