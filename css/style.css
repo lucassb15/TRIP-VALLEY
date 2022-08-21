@@ -44,7 +44,7 @@ body {
   color: var(--text-color);
   background-color: var(--body-color);
   -webkit-font-smoothing: antialiased;
-  background-color: blue;
+ 
 }
 
 .title {
@@ -322,11 +322,6 @@ nav.show div.icon-close {
   background: var(--body-color);
 }
 
-#tour .grid {
-  display: grid;
-  gap: 0;
-}
-
 #tour header .title {
   text-align: center;
   margin: 0;
@@ -334,13 +329,9 @@ nav.show div.icon-close {
   gap: 0;
 }
 
-.tour {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-}
+
+
 .tours {
-  display: flex;
   width: 100%;
   height: 100%;
 }
@@ -348,22 +339,35 @@ nav.show div.icon-close {
   color: var(--text-color-light);
 }
 .tour i {
+  
   margin-bottom: 1.5rem;
   font-size: 5rem;
   color: var(--text-color-light);
   cursor: pointer;
+  
 }
-.card_image {
-  width: 100vw;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(/assets/img/passeioTelefericoAparecida.jpeg);
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  background-size: cover;
-  padding: 3rem;
+/* tour swiper-slide swiper-slide-active */
+.text-img{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
   text-align: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
+ 
 }
-.card_image2 {
+
+.card_image {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+/* .card_image2 {
   width: 100vw;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/assets/img/passeioAquarioAparecida.jpg);
@@ -382,12 +386,12 @@ nav.show div.icon-close {
   padding: 3rem;
   text-align: center;
   border-bottom: 0.25rem solid var(--base-color);
-}
+} */
 
 /*=== SWIPER ================================*/
 .swiper-slide {
   height: cover;
-  padding: 3rem 0rem;
+  padding: 2rem 0rem;
 }
 
 .swiper-pagination-bullet {
@@ -402,13 +406,13 @@ nav.show div.icon-close {
 /*=== TOURISM ================================*/
 .tour p {
   color: var(--text-color-light);
-  background-color: red;
+  
 }
 
 .card_image-tour{
   width: 100vw;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(./assets/img/basilicaTour.jpg);
+    url(/assets/img/basilicaTour.jpg);
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   background-size: cover;
   padding: 3rem;
