@@ -401,6 +401,7 @@ nav.show div.icon-close {
 /*=== TOURISM ================================*/
 .tour p {
   color: var(--text-color-light);
+  background-color: red;
 }
 
 .card_image-tour{
@@ -416,7 +417,7 @@ nav.show div.icon-close {
 .card_image-tour2 {
   width: 100vw;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(./assets/img/guaratinguetaTour.jpg);
+    url(/assets/img/guaratinguetaTour.jpg);
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   background-size: cover;
   padding: 3rem;
