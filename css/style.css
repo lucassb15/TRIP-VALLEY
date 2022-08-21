@@ -31,6 +31,7 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+  --swiper-theme-color: hsl(var(--hue) 36% 57%);
 }
 
 /*=== BASE =================================*/
@@ -43,7 +44,6 @@ body {
   color: var(--text-color);
   background-color: var(--body-color);
   -webkit-font-smoothing: antialiased;
-  transition: 0.6s;
 }
 
 .title {
@@ -216,7 +216,6 @@ nav ul.grid {
   gap: 4rem;
 }
 
-
 /* toggle menu */
 .toggle {
   color: var(--base-color);
@@ -290,7 +289,9 @@ nav.show div.icon-close {
 }
 
 /*=== SERVICES ================================*/
-
+#services {
+  background: var(--body-color);
+}
 .cards.grid {
   gap: 1.5rem;
 }
@@ -313,4 +314,122 @@ nav.show div.icon-close {
 .card .title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+/*=== TOUR ================================*/
+#tour {
+  background: var(--body-color);
+}
+
+#tour .grid {
+  display: grid;
+  gap: 0;
+}
+
+#tour header .title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.tour {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.tours {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.tour .title {
+  color: var(--text-color-light);
+}
+.tour i {
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--text-color-light);
+  cursor: pointer;
+}
+.card_image {
+  width: 100vw;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/assets/img/Passeio\ Aparecida\ Card.jpeg);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  background-size: cover;
+  padding: 3rem;
+  text-align: center;
+  border-bottom: 0.25rem solid var(--base-color);
+}
+.card_image2 {
+  width: 100vw;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/assets/img/Passeio\ Aquario\ Aparecida\ Card.jpg);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  background-size: cover;
+  padding: 3rem;
+  text-align: center;
+  border-bottom: 0.25rem solid var(--base-color);
+}
+.card_image3 {
+  width: 100vw;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/assets/img/Passeio\ Porto\ Itaguaçu\ Card.jpg);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  background-size: cover;
+  padding: 3rem;
+  text-align: center;
+  border-bottom: 0.25rem solid var(--base-color);
+}
+
+/*=== SWIPER ================================*/
+.swiper-slide {
+  height: cover;
+  padding: 3rem 0rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color) !important;
+}
+
+/*=== TOURISM ================================*/
+.tour p {
+  color: var(--text-color-light);
+}
+
+.card_image-tour{
+  width: 100vw;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/assets/img/Basilica\ IMG.jpg);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  background-size: cover;
+  padding: 3rem;
+  text-align: center;
+  border-bottom: 0.25rem solid var(--base-color);
+}
+.card_image-tour2 {
+  width: 100vw;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/assets/img/Guaratinguetá\ IMG.jpg);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  background-size: cover;
+  padding: 3rem;
+  text-align: center;
+  border-bottom: 0.25rem solid var(--base-color);
+}
+.card_image-tour3 {
+  width: 100vw;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/assets/img/Cunha\ IMG.jpg);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  background-size: cover;
+  padding: 3rem;
+  text-align: center;
+  border-bottom: 0.25rem solid var(--base-color);
 }
