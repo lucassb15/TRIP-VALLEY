@@ -1,4 +1,4 @@
-// abre e fecha o menu
+//  Abre e fecha o menu
 const nav = document.querySelector('#header nav');
 const toggle = document.querySelectorAll('nav .toggle');
 
@@ -8,7 +8,7 @@ for (const element of toggle) {
     });
 };
 
-// fecha menu pelos links
+//  Fecha menu pelos links
 const links = document.querySelectorAll('nav ul li a');
 
 for (const link of links) {
@@ -17,7 +17,7 @@ for (const link of links) {
     })
 }
 
-// adiciona sombra quando rolar a página
+//  Adiciona sombra quando rolar a página
 const header = document.querySelector('#header');
 const navHeight = header.offsetHeight;
 
@@ -30,8 +30,7 @@ window.addEventListener('scroll', () => {
 })
 
 
-// Tours carrousel swiper
-
+//  Tours carrousel swiper
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     pagination: {
@@ -42,9 +41,7 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-//   ScrollReveal: Mostra elementos quando der scroll
-
-
+//  ScrollReveal: Mostra elementos quando der scroll
 const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
@@ -60,4 +57,13 @@ scrollReveal.reveal(`
     #contact .text, #contact .links
 `, { interval: 100 })
 
-// home,services,tour,tourism,contact
+
+//  Botão voltar para o topo
+const backToTopButton = document.querySelector('.back-to-top')
+window.addEventListener('scroll', () => {
+    if(window.scrollY >= 560) {
+        backToTopButton.classList.add('show')
+    } else {
+        backToTopButton.classList.remove('show')
+    }
+})
