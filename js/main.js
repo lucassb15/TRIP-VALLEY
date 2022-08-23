@@ -15,7 +15,7 @@ for (const link of links) {
     link.addEventListener('click', () => {
         nav.classList.remove('show');
     })
-}
+};
 
 //  Adiciona sombra quando rolar a página
 const header = document.querySelector('#header');
@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
     } else {
         header.classList.remove('scroll')
     }
-})
+});
 
 
 //  Tours carrousel swiper
@@ -39,31 +39,75 @@ const swiper = new Swiper('.swiper', {
     mousewheel: true,
     keyboard: true,
 
+    breakpoints: {
+        767: {
+            slidesPerView: 2,
+            setWrapperSize: true
+        }
+    }
 });
 
 //  ScrollReveal: Mostra elementos quando der scroll
 const scrollReveal = ScrollReveal({
     origin: 'top',
-    distance: '30px',
+    distance: '23px',
     duration: 700,
     reset: true
-})
+});
 
 scrollReveal.reveal(`
     #home .text, #home .image,
     #services .text, #services .card,
     #tour header,
     #tourism header, 
-    #contact .text, #contact .links
-`, { interval: 100 })
+    #contact .text, #contact .links,
+    footer .brand, footer .socials
+`, { interval: 250 });
 
 
 //  Botão voltar para o topo
 const backToTopButton = document.querySelector('.back-to-top')
 window.addEventListener('scroll', () => {
-    if(window.scrollY >= 560) {
+    if (window.scrollY >= 560) {
         backToTopButton.classList.add('show')
     } else {
         backToTopButton.classList.remove('show')
     }
-})
+});
+
+// Menu ativo conforme a seção visível na página
+const sections = document.querySelectorAll('main section[id]');
+function activateMenuAtCurrentSection() {
+    const checkpoint = window.pageYOffset+(window.innerHeight / 8) * 4;
+  
+    
+    for(const section of sections) {
+       
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+
+        const checkpointStart = checkpoint >= sectionTop;
+        const checkpointEnd = checkpoint <= sectionTop + sectionHeight;
+
+        
+        if (checkpointStart && checkpointEnd) {
+            document
+            .querySelector(`nav .menu ul li a[href*=${sectionId}]`)
+            .classList.add('active');
+            console.log('entrou');
+        } else {
+            document
+            .querySelector(`nav .menu ul li a[href*=${sectionId}]`)
+            .classList.remove('active');
+            console.log('saiu');
+        }
+        
+    }
+   
+}
+
+
+console.log(activateMenuAtCurrentSection());
+
+console.log('oi');
