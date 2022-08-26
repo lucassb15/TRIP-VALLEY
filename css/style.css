@@ -201,7 +201,6 @@ nav .menu {
   visibility: hidden;
   top: -20rem;
   transition: 0.25s;
-  
 }
 
 nav .menu ul {
@@ -313,11 +312,8 @@ nav.show div.icon-close {
 }
 
 /*=== BENEFITS ================================*/
-#benefits {
-  background: var(--body-color);
-}
-#benefits span {
-  color: var(--base-color);
+.show-why-us{
+  display: none;
 }
 
 /*=== SERVICES ================================*/
@@ -365,11 +361,10 @@ nav.show div.icon-close {
 }
 
 .carousel-cell {
-  width:100%;
+  width: 100%;
   height: 300px;
   margin-right: 10px;
   margin-left: -10px;
-  
 }
 
 .carousel-cell img {
@@ -378,11 +373,10 @@ nav.show div.icon-close {
   object-fit: cover;
 }
 
-.flickity-page-dots .dot.is-selected{
+.flickity-page-dots .dot.is-selected {
   color: var(--base-color) !important;
   background: var(--base-color);
 }
-
 
 /*=== CONTACT ================================*/
 
@@ -558,7 +552,6 @@ footer .socials a:hover {
     padding-left: 3rem;
     padding-right: 3rem;
   }
-  
 
   /* contact */
   #contact .container {
@@ -603,11 +596,78 @@ footer .socials a:hover {
     width: 60%;
     height: 400px;
     margin-right: 10px;
+    margin-left: 0;
   }
-  
+
   .carousel-cell img {
     display: block;
     height: 400px;
     object-fit: cover;
+  }
+  
+  .show-why-us{
+    display: grid;
+    gap: 5rem;
+    padding: 2rem;
+  }
+  #benefits header {
+    margin: 0 auto;
+  }
+  #benefits {
+    background: var(--body-color);
+   
+  }
+  #benefits span {
+    color: var(--base-color);
+  }
+  
+  #benefits .benefits {
+    width: 100%;
+    height: auto;
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .info-card {
+    width: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #benefits span.circle {
+    position: relative;
+    background: var(--base-color);
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+  }
+  
+  #benefits i {
+    position: absolute;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+  }
+  
+  .circle-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  
+  #benefits .text-info {
+    color: var(--title-color);
+    height: 5rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    text-align: center;
   }
 }
