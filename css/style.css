@@ -36,7 +36,7 @@ img {
   /* fonts */
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
-  --title-font:  "Poppins", sans-serif;
+  --title-font: "Poppins", sans-serif;
   --body-font: "DM Sans", sans-serif;
 }
 
@@ -96,7 +96,7 @@ body {
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
 }
 
 .grid {
@@ -196,12 +196,12 @@ nav ul li a.active::after {
   font-weight: bold;
 }
 
-
 nav .menu {
   opacity: 0;
   visibility: hidden;
   top: -20rem;
   transition: 0.25s;
+  
 }
 
 nav .menu ul {
@@ -230,7 +230,14 @@ nav.show .menu ul {
 }
 
 nav ul.grid {
-  gap: 4rem;
+  gap: 2.2rem;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+.no-icon {
+  visibility: hidden;
 }
 
 /* toggle menu */
@@ -305,6 +312,14 @@ nav.show div.icon-close {
   margin-bottom: 2rem;
 }
 
+/*=== BENEFITS ================================*/
+#benefits {
+  background: var(--body-color);
+}
+#benefits span {
+  color: var(--base-color);
+}
+
 /*=== SERVICES ================================*/
 #services {
   background: var(--body-color);
@@ -333,86 +348,41 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
-/*=== TOUR ================================*/
-#tour {
+/*=== PACKAGES  ================================*/
+#packages {
   background: var(--body-color);
 }
 
-#tour header .title {
+#packages header .title {
   text-align: center;
   margin: 0;
   padding: 0;
   gap: 0;
 }
 
-.tours {
-  width: 100%;
-  height: 100%;
-}
-.tour .title {
-  color: var(--text-color-light);
-}
-.tour i {
-  margin-bottom: 1.5rem;
-  font-size: 5rem;
-  color: var(--text-color-light);
-  cursor: pointer;
+.carousel {
+  background: var(--body-color);
 }
 
-
-/* tour swiper-slide swiper-slide-active */
-.text-img {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  text-align: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-bottom: 0.25rem solid var(--base-color);
+.carousel-cell {
+  width:100%;
+  height: 300px;
+  margin-right: 10px;
+  margin-left: -10px;
+  
 }
 
-.card_image {
-  width: 100%;
-  height: 100%;
-}
-/*=== SWIPER ================================*/
-.swiper-slide {
-  height: cover;
-  padding: 2.5rem 0rem;
-}
-
-.swiper-pagination-bullet {
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--base-color) !important;
-}
-
-/*=== TOURISM ================================*/
-#tourism header .title {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  gap: 0;
-}
-.tour p {
-  color: var(--text-color-light);
-}
-
-.testando {
-  position: absolute;
-  top: 0;
+.carousel-cell img {
+  display: block;
+  height: 300px;
   object-fit: cover;
-  width: 100%;
-  height: 100%;
-  background-color: red;
 }
+
+.flickity-page-dots .dot.is-selected{
+  color: var(--base-color) !important;
+  background: var(--base-color);
+}
+
 
 /*=== CONTACT ================================*/
 
@@ -510,17 +480,14 @@ footer .socials a:hover {
   transform: translateY(0);
 }
 
-
 /* Responsivo */
 /* extra large devices: 1200 > */
 @media (min-width: 1200px) {
-
   /* layout */
   .container {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
-  
   }
   main {
     margin-top: var(--header-height);
@@ -566,7 +533,7 @@ footer .socials a:hover {
   /* home */
   #home .container {
     grid-auto-flow: column;
-    gap: 10rem;
+    gap: 15rem;
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
@@ -590,16 +557,8 @@ footer .socials a:hover {
   .card {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
   
-}
-  /* tour */
-  .tour {
-    margin-right: 1rem;
-  }
-
-  .text-img {
-    height: 100%;
-  }
 
   /* contact */
   #contact .container {
@@ -625,22 +584,30 @@ footer .socials a:hover {
   footer .logo {
     font-size: 2.25rem;
   }
-  
 }
 /* large devices: 1023 > */
 @media (min-width: 1023px) {
-
 }
 
 /* large devices: 992 > */
 @media (min-width: 992px) {
-  :root { 
-  --title-font-size: 2.25rem;
-  --subtitle-font-size: 1.125rem;
+  :root {
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
   }
 }
 
 /* medium devices: 767 > */
 @media (min-width: 767px) {
-
+  .carousel-cell {
+    width: 60%;
+    height: 400px;
+    margin-right: 10px;
+  }
+  
+  .carousel-cell img {
+    display: block;
+    height: 400px;
+    object-fit: cover;
+  }
 }
