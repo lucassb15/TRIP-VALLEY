@@ -24,6 +24,12 @@
 
     <!-- SWIPER -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+   <!-- FLICKY -->
+   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   <script src="jquery-3.3.1"></script>
+   <script src="flick.js"></script>
 </head>
 
 <body>
@@ -33,14 +39,14 @@
             <a href="#" class="logo">
                 VALE<span>RECEPTIVO</span>.
             </a>
-            
+
             <!-- menu -->
             <div class="menu">
                 <ul class="grid">
                     <li><a class="title" href="#home">Início</a></li>
+                    <li><a class="title" href="#benefits">Vantagens</a></li>
                     <li><a class="title" href="#services">Serviços</a></li>
-                    <li><a class="title" href="#tour">Passeios</a></li>
-                    <li><a class="title" href="#tourism">Turismos</a></li>
+                    <li><a class="title" href="#packages">Roteiros</a></li>
                     <li><a class="title" href="#contact">Contato</a></li>
                 </ul>
             </div>
@@ -58,15 +64,30 @@
                     <img src="assets/img/Basilica IMG2.jpg" alt="Foto da Basílica de Aparecida - SP">
                 </div>
                 <div class="text">
-                    <h2 class="title">Entre com um título</h2>
-                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Curabitur</p>
-                    <a href="#" class="button">Clique aqui !</a>
+                    <h2 class="title">Bem-vindo</h2>
+                    <p class="subtitle">Vamos começar o nosso tour?</p>
+                    <a href="#benefits" class="button">Começar !</a>
                 </div>
             </div>
         </section>
 
         <div class="divider-1"></div>
+
+        <!-- BENEFITS -->
+        <section class="section" id="benefits">
+            <div class="container grid">
+                <header>
+                    <h2 class="title">Por que <span>Reservar Conosco</span></h2>
+                </header>
+
+                <div class="benefits">
+
+                </div>
+
+            </div>
+        </section>
+        
+        <div class="divider-2"></div>
 
         <!-- SERVICES -->
         <section class="section" id="services">
@@ -79,135 +100,69 @@
                 <div class="cards  grid">
                     <div class="card">
                         <i class="icon-briefcase"></i>
-                        <h3 class="title">Exemplo</h3>
+                        <h3 class="title">Roteiros em grupo</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien hendrerit,
                             commodo
                             massa quis, ultrices ex. Cras diam odio.</p>
                     </div>
                     <div class="card">
                         <i class="icon-briefcase"></i>
-                        <h3 class="title">Exemplo</h3>
+                        <h3 class="title">Roteiros privativos</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien hendrerit,
                             commodo
                             massa quis, ultrices ex. Cras diam odio.</p>
                     </div>
                     <div class="card">
                         <i class="icon-briefcase"></i>
-                        <h3 class="title">Exemplo</h3>
+                        <h3 class="title">Roteiros personalizados</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien hendrerit,
                             commodo
                             massa quis, ultrices ex. Cras diam odio.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="divider-2"></div>
-
-        <!-- TOUR -->
-        <section class="section" id="tour">
-            <div class="container grid">
-                <header>
-                    <h2 class="title">Passeios</h2>
-                </header>
-                <div class="tours swiper">
-                    <div class="swiper-wrapper">
-
-                        <div class="tour swiper-slide">
-                            <div class="card_image">
-                                <img src="./assets/img/passeioTelefericoAparecida.jpeg" class="testando" alt="">
-                                <div class="text-img">
-                                    <h2 class="title">Teleférico<br>Aparecida</h2>
-                                    <i class="icon-zoom-in"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tour swiper-slide">
-                            <div class="card_image ">
-                                <img src="./assets/img/passeioAquarioAparecida.jpg" class="testando" alt="">
-                                <div class="text-img">
-                                    <h2 class="title">Aquário<br>Aparecida</h2>
-                                    <i class="icon-zoom-in"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tour swiper-slide">
-                            <div class="card_image ">
-
-
-                                <i class="icon-Park"></i>
-                                <h2 class="title">Guaratinguetáa</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien
-                                    hendrerit, commodo massa quis, ultrices ex. Cras diam odio.</p>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                    <div class="swiper-pagination"></div>
-
                 </div>
             </div>
         </section>
 
         <div class="divider-1"></div>
 
-        <!-- TOURISM -->
-        <section class="section" id="tourism">
+        <!-- TOUR -->
+        <section class="section" id="packages">
             <div class="container grid">
+
                 <header>
-                    <h2 class="title">Turismo</h2>
+                    <h2 class="title">Roteiros e Tours</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Curabitur sed sapien hendrerit, commodo
+                        ex.</p>
                 </header>
-                <div class="tours swiper">
-                    <div class="swiper-wrapper">
 
-                        <div class="tour swiper-slide">
-
-                            <div class="card_image">
-                                <img src="./assets/img/basilicaTour.jpg" class="testando" alt="">
-                                <div class="text-img">
-                                    <i class="icon-Church"></i></a>
-                                    <h2 class="title">Aparecida</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien
-                                        hendrerit, commodo massa quis, ultrices ex. Cras diam odio.</p>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="tour swiper-slide">
-                            <div class="card_image ">
-                                <img src="./assets/img/guaratinguetaTour.jpg" class="testando" alt="">
-                                <div class="text-img">
-                                    <i class="icon-Park"></i>
-                                    <h2 class="title">Guaratinguetáa</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien
-                                        hendrerit, commodo massa quis, ultrices ex. Cras diam odio.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tour swiper-slide">
-                            <div class="card_image ">
-
-
-                                <i class="icon-Park"></i>
-                                <h2 class="title">Guaratinguetáa</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sapien
-                                    hendrerit, commodo massa quis, ultrices ex. Cras diam odio.</p>
-                            </div>
-
-                        </div>
-
+                <div class="carousel " data-flickity>
+                    <div class="carousel-cell">
+                      <img href="https://www.tripadvisor.com.br/Attraction_Review-g780033-d9601890-Reviews-Teleferico_Aparecida-Aparecida_State_of_Sao_Paulo.html" target="_blank" src="./assets/img/passeioTelefericoAparecidaIMG.png" alt="Teleférico de Aparecida" /> 
                     </div>
+                    <div class="carousel-cell">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+                    </div>
+                    <div class="carousel-cell">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+                    </div>
+                    <div class="carousel-cell">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+                    </div>
+                    <div class="carousel-cell">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+                    </div>
+                    <div class="carousel-cell">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
+                    </div>
+                    <div class="carousel-cell">
+                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
+                    </div>
+                  </div>
+                
 
-                    <div class="swiper-pagination"></div>
 
-                </div>
             </div>
+            
         </section>
 
         <div class="divider-2"></div>
@@ -258,6 +213,7 @@
     </footer>
 
     <a href="#home" class="icon-arrow-up back-to-top"></a>
+   
     
     <!-- SWIPER -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -265,7 +221,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- MAIN.JS -->
     <script src="./js/main.js"></script>
-
+    
 </body>
 
 </html>
