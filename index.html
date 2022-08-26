@@ -8,28 +8,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VALE RECEPTIVO</title>
+
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
     <!-- ICONS -->
     <link rel="stylesheet" href="./assets/fonts/icons/style.css">
     <!-- STYLES -->
     <link rel="stylesheet" href="./css/style.css">
-
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
         rel="stylesheet">
-
-    <!-- SWIPER -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-   <!-- FLICKY -->
-   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-   <script src="jquery-3.3.1"></script>
-   <script src="flick.js"></script>
+    <!-- FLICKY -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -44,7 +37,7 @@
             <div class="menu">
                 <ul class="grid">
                     <li><a class="title" href="#home">Início</a></li>
-                    <li><a class="title" href="#benefits">Vantagens</a></li>
+                    <li><a class="title" href="#benefits-anchor">Vantagens</a></li>
                     <li><a class="title" href="#services">Serviços</a></li>
                     <li><a class="title" href="#packages">Roteiros</a></li>
                     <li><a class="title" href="#contact">Contato</a></li>
@@ -69,12 +62,13 @@
                     <a href="#benefits" class="button">Começar !</a>
                 </div>
             </div>
+            <div id="benefits-anchor"></div>
         </section>
-
+        
         <div class="divider-1"></div>
 
         <!-- BENEFITS -->
-        <section class="section" id="benefits">
+        <section class="show-why-us section" id="benefits">
             <div class="container grid">
                 <header>
                     <h2 class="title">Por que <span>Reservar Conosco</span></h2>
@@ -82,11 +76,60 @@
 
                 <div class="benefits">
 
+                    <div class="info-card">
+                        <div class="circle-box">
+                        <span class="circle"></span>
+                        <i class="icon-instagram"></i>
+                        </div>
+                        <div class="text-info">
+                            <p>Veja o que está disponível e <strong>reserve online</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="circle-box">
+                        <span class="circle"></span>
+                        <i class="icon-instagram"></i>
+                        </div>
+                        <div class="text-info">
+                            <p>Viaje em uma <strong>frota moderna</strong> de carros, vans e ônibus</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="circle-box">
+                        <span class="circle"></span>
+                        <i class="icon-instagram"></i>
+                        </div>
+                        <div class="text-info">
+                            <p>Um <strong>Operador Turístico local</strong> sem intermediários ou taxas extras</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="circle-box">
+                        <span class="circle"></span>
+                        <i class="icon-instagram"></i>
+                        </div>
+                        <div class="text-info">
+                            <p>Uma equipe fantástica com <strong>guias oficiais</strong> experientes e simpáticos</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="circle-box">
+                        <span class="circle"></span>
+                        <i class="icon-instagram"></i>
+                        </div>
+                        <div class="text-info">
+                            <p>Suporte profissional disponível <strong>24 horas por dia</strong></p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </section>
-        
+
         <div class="divider-2"></div>
 
         <!-- SERVICES -->
@@ -137,32 +180,36 @@
 
                 <div class="carousel " data-flickity>
                     <div class="carousel-cell">
-                      <img href="https://www.tripadvisor.com.br/Attraction_Review-g780033-d9601890-Reviews-Teleferico_Aparecida-Aparecida_State_of_Sao_Paulo.html" target="_blank" src="./assets/img/passeioTelefericoAparecidaIMG.png" alt="Teleférico de Aparecida" /> 
+                        <img href="https://www.tripadvisor.com.br/Attraction_Review-g780033-d9601890-Reviews-Teleferico_Aparecida-Aparecida_State_of_Sao_Paulo.html"
+                            target="_blank" src="./assets/img/passeioTelefericoAparecidaIMG.png"
+                            alt="Teleférico de Aparecida" />
                     </div>
                     <div class="carousel-cell">
-                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg"
+                            alt="One World Trade" />
                     </div>
                     <div class="carousel-cell">
-                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
                     </div>
                     <div class="carousel-cell">
-                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
                     </div>
                     <div class="carousel-cell">
-                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
                     </div>
                     <div class="carousel-cell">
-                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
                     </div>
                     <div class="carousel-cell">
-                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg"
+                            alt="flight formation" />
                     </div>
-                  </div>
-                
+                </div>
+
 
 
             </div>
-            
+
         </section>
 
         <div class="divider-2"></div>
@@ -213,15 +260,15 @@
     </footer>
 
     <a href="#home" class="icon-arrow-up back-to-top"></a>
-   
-    
-    <!-- SWIPER -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- FLICKITY -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="jquery-3.3.1"></script>
+    <script src="flick.js"></script>
     <!-- SCROLL REVEAL -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- MAIN.JS -->
     <script src="./js/main.js"></script>
-    
+
 </body>
 
 </html>
