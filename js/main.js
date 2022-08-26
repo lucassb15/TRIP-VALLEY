@@ -1,10 +1,14 @@
 //  Abre e fecha o menu
 const nav = document.querySelector('#header nav');
 const toggle = document.querySelectorAll('nav .toggle');
+// overflow hidden
+const overflowHidden = document.querySelector('body');
 
 for (const element of toggle) {
     element.addEventListener('click', () => {
+        overflowHidden.classList.toggle('no-scroll');
         nav.classList.toggle('show');
+        
     });
 };
 
@@ -13,8 +17,10 @@ const links = document.querySelectorAll('nav ul li a');
 
 for (const link of links) {
     link.addEventListener('click', () => {
-        nav.classList.remove('show');
-    })
+        overflowHidden.classList.remove('no-scroll');
+        nav.classList.remove('show').overFlow();
+       
+    });
 };
 
 //  Adiciona sombra quando rolar a página
@@ -31,8 +37,12 @@ window.addEventListener('scroll', () => {
 
 
 //  Tours carrousel swiper
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-container', {
+    speed: 400,
+    spaceBetween: 10,
+    direction: 'horizontal',
     slidesPerView: 1,
+
     pagination: {
         el: '.swiper-pagination'
     },
@@ -41,7 +51,7 @@ const swiper = new Swiper('.swiper', {
 
     breakpoints: {
         767: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             setWrapperSize: true
         }
     }
@@ -78,11 +88,11 @@ window.addEventListener('scroll', () => {
 // Menu ativo conforme a seção visível na página
 const sections = document.querySelectorAll('main section[id]');
 function activateMenuAtCurrentSection() {
-    const checkpoint = window.pageYOffset+(window.innerHeight / 8) * 4;
-  
-    
-    for(const section of sections) {
-       
+    const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4;
+
+
+    for (const section of sections) {
+
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
         const sectionId = section.getAttribute('id');
@@ -90,24 +100,20 @@ function activateMenuAtCurrentSection() {
         const checkpointStart = checkpoint >= sectionTop;
         const checkpointEnd = checkpoint <= sectionTop + sectionHeight;
 
-        
+
         if (checkpointStart && checkpointEnd) {
             document
-            .querySelector(`nav .menu ul li a[href*=${sectionId}]`)
-            .classList.add('active');
+                .querySelector(`nav .menu ul li a[href*=${sectionId}]`)
+                .classList.add('active');
             console.log('entrou');
         } else {
             document
-            .querySelector(`nav .menu ul li a[href*=${sectionId}]`)
-            .classList.remove('active');
+                .querySelector(`nav .menu ul li a[href*=${sectionId}]`)
+                .classList.remove('active');
             console.log('saiu');
         }
-        
+
     }
-   
+
 }
 
-
-console.log(activateMenuAtCurrentSection());
-
-console.log('oi');
