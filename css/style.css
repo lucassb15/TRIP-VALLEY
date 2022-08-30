@@ -168,8 +168,13 @@ nav .title {
 
 nav ul li {
   text-align: center;
-  
 }
+
+header .dropdown {
+  text-align: center;
+ 
+}
+
 nav li {
   padding: .5rem;
   padding-right: 1rem;
@@ -335,6 +340,73 @@ nav.show div.icon-close {
 }
 .show-why-us-menu {
   display: none;
+}
+
+.li-drop {
+  padding: 0;
+  margin: 0;
+  background-color: none;
+  color: none;
+}
+
+header .dropbtn {
+  background-color: var(--body-color);
+  color: var(--title-color);
+  padding: .5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border: none;
+  font: var(--title-font);
+  cursor: pointer;
+  transition: .2s;
+  text-align: center;
+  transition: background .8s;
+}
+
+
+header .dropbtn {
+  font-size: 1.875rem ;
+  font: 700 var(--title-font-size) var(--title-font);
+}
+
+.dropbtn:hover {
+  background: #cdf4d0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #cdf4d0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: .8s;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+ color: var(--title-color);
 }
 
 /*=== SERVICES ================================*/
@@ -696,63 +768,29 @@ footer .socials a:hover {
     margin-right: 1rem;
     text-align: center;
   }
+
+  header .dropbtn {
+    background-color: var(--body-color);
+    color: var(--title-color);
+    padding: .5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border: none;
+    font: var(--title-font);
+    cursor: pointer;
+    transition: .2s;
+    text-align: center;
+    transition: background .8s;
+  }
+  header .dropbtn {
+    font-size: 1rem !important;
+    font: 400 var(--title-font-size) var(--title-font);
+  }
 }
 
 /*  */
 
-.dropbtn {
-  background-color: var(--body-color);
-  color: var(--title-color);
-  padding: .5rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  font-size: 1rem;
-  border: none;
-  font: var(--title-font);
-  cursor: pointer;
-  transition: .2s;
-  text-align: center;
-  transition: background .8s;
-}
 
-.dropbtn:hover {
-  background: #cdf4d0;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #cdf4d0;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  transition: .8s;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
- color: var(--title-color);
-}
 
 
