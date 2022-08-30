@@ -137,6 +137,28 @@ body {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 0.50rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(240, 240, 240, 0.909);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6dae73; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6adb75; 
+}
+
 /*=== LOGO ===============================*/
 .logo {
   font: 700 1.31rem var(--title-font);
@@ -360,7 +382,7 @@ header .dropbtn {
   cursor: pointer;
   transition: .2s;
   text-align: center;
-  transition: background .8s;
+  transition: background .4s;
 }
 
 
@@ -373,6 +395,8 @@ header .dropbtn {
   background: #cdf4d0;
 }
 
+
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -383,10 +407,14 @@ header .dropbtn {
   display: none;
   position: absolute;
   background-color: #cdf4d0;
-  min-width: 160px;
+  min-width: 240px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 
+}
+
+header .dropdown-content {
+  font-weight: 100;
 }
 
 .dropdown-content a {
@@ -781,7 +809,7 @@ footer .socials a:hover {
     cursor: pointer;
     transition: .2s;
     text-align: center;
-    transition: background .8s;
+    transition: background .4s;
   }
   header .dropbtn {
     font-size: 1rem !important;
