@@ -337,7 +337,7 @@ nav.show div.icon-close {
 }
 
 #home .container {
-  margin: 0;
+  margin: 0; 
 }
 
 #home .image {
@@ -700,6 +700,7 @@ footer .socials a:hover {
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
+    
   }
 
   #home .image {
