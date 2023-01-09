@@ -172,6 +172,7 @@ body {
   width: 20%;
   height: 100%;
   align-items: center;
+  justify-content: center;
   
 }
 .logo {
@@ -182,6 +183,7 @@ body {
 }
 
 .logo-img{
+  
   width: 30%;
   height: 100%;
   user-select: none;
@@ -712,7 +714,7 @@ footer .socials a:hover {
  /* packages */
  #packages .container {
   grid-auto-flow: column;
-  gap: 10rem;
+  gap: 2rem;
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
@@ -764,6 +766,123 @@ footer .socials a:hover {
 }
 /* large devices: 1023 > */
 @media (min-width: 1023px) {
+   /* layout */
+   .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main {
+    margin-top: var(--header-height);
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+
+  .section header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button {
+    height: 3.125rem;
+  }
+  /* menu */
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+  nav .icon-menu {
+    display: none;
+  }
+
+  /* home */
+  #home .container {
+    grid-auto-flow: column;
+    gap: 15rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+ /* packages */
+ #packages .container {
+  grid-auto-flow: column;
+  gap: 2rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#packages .image {
+  order: 0;
+}
+
+#packages .text {
+  order: 1;
+  max-width: 24rem;
+  text-align: center;
+}
+  /* services */
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /* contact */
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  /* footer */
+
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
 }
 
 /* large devices: 992 > */
@@ -772,22 +891,129 @@ footer .socials a:hover {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
+   /* layout */
+   .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main {
+    margin-top: var(--header-height);
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+
+  .section header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button {
+    height: 3.125rem;
+  }
+  /* menu */
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+  nav .icon-menu {
+    display: none;
+  }
+
+  /* home */
+  #home .container {
+    grid-auto-flow: column;
+    gap: 5rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+   
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+ /* packages */
+ #packages .container {
+  grid-auto-flow: column;
+  gap: 2rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#packages .image {
+  order: 0;
+}
+
+#packages .text {
+  order: 1;
+  max-width: 24rem;
+  text-align: center;
+}
+  /* services */
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /* contact */
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  /* footer */
+
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
 }
 
 /* medium devices: 767 > */
 @media (min-width: 767px) {
-  .carousel-cell {
-    width: 60%;
-    height: 400px;
-    margin-right: 10px;
-    margin-left: 0;
-  }
-
-  .carousel-cell img {
-    display: block;
-    height: 400px;
-    object-fit: cover;
-  }
+  
 
   /* show menu / container */
   .show-why-us {
@@ -800,6 +1026,129 @@ footer .socials a:hover {
     display: block;
   }
 
+  :root {
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
+  }
+   /* layout */
+   .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main {
+    margin-top: var(--header-height);
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+
+  .section header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button {
+    height: 3.125rem;
+  }
+  /* menu */
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+  nav .icon-menu {
+    display: none;
+  }
+
+  /* home */
+  #home .container {
+    grid-auto-flow: column;
+    gap: 2rem;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+   
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+ /* packages */
+ #packages .container {
+  grid-auto-flow: column;
+  gap: 2rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#packages .image {
+  order: 0;
+}
+
+#packages .text {
+  order: 1;
+  max-width: 24rem;
+  text-align: center;
+}
+  /* services */
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /* contact */
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  /* footer */
+
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
+  
   #benefits header {
     margin: 0 auto;
   }
@@ -878,9 +1227,26 @@ footer .socials a:hover {
     font-size: 1rem !important;
     font: 400 var(--title-font-size) var(--title-font);
   }
+
+   #contact  {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 0.4rem;
+    
+  }
+  
+
 }
 
-/*  */
+/* medium devices: 481 > */
+
+
+@media (max-width: 765px) {
+  #header .container-logo-img-mobile {
+    visibility: hidden;
+  }
+ 
+}
 
 
 
