@@ -36,26 +36,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-//  Tours carrousel swiper
-const swiper = new Swiper('.swiper-container', {
-    speed: 400,
-    spaceBetween: 10,
-    direction: 'horizontal',
-    slidesPerView: 1,
 
-    pagination: {
-        el: '.swiper-pagination'
-    },
-    mousewheel: true,
-    keyboard: true,
-
-    breakpoints: {
-        767: {
-            slidesPerView: 1,
-            setWrapperSize: true
-        }
-    }
-});
 
 //  ScrollReveal: Mostra elementos quando der scroll
 const scrollReveal = ScrollReveal({
