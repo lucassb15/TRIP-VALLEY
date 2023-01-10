@@ -24,8 +24,8 @@ img {
   /* Colors */
   --hue: 210;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 61% 62%);
-  --base-color-second: hsl(var(--hue) 76% 53%);
+  --base-color: hsl(var(--hue) 70% 50%);
+  --base-color-second: hsl(var(--hue) 78% 53%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
@@ -343,6 +343,8 @@ nav.show div.icon-close {
 #home .image {
   position: relative;
   
+  width: 100%;
+  height: 100%;
 }
 
 #home .image::before {
@@ -605,7 +607,9 @@ footer .socials a {
   transition: 0.3s;
   display: inline-block;
 }
-
+footer .socials span {
+  opacity: 0;
+}
 footer .socials {
   grid-auto-flow: column;
   width: fit-content;
@@ -1245,6 +1249,7 @@ footer .socials a:hover {
 @media (max-width: 765px) {
   #header .container-logo-img-mobile {
     visibility: hidden;
+    display: none;
   }
  
 }
