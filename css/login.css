@@ -54,7 +54,7 @@ a:hover {
   /* HSL color mode */
   --base-color: hsl(var(--hue) 70% 50%);
   --base-color-second: hsl(var(--hue) 78% 53%);
-  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --base-color-alt: hsl(var(--hue) 49% 50%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
@@ -225,6 +225,9 @@ header .section {
 header .logo-alt span {
   color: var(--base-color);
 }
+header .logo span {
+  font-size: 1rem;
+}
 header .logo {
   font: 700 1.31rem var(--title-font);
   color: black;
@@ -330,7 +333,12 @@ footer .logo {
   display: inline-block;
   margin-bottom: 1.5rem;
 }
-
+footer .logo {
+  font: 700 2rem var(--title-font);
+  color: var(--title-color);
+  margin-top: 0.2rem;
+  user-select: none;
+}
 footer .brand p {
   color: var(--text-color-light);
   margin-bottom: 0.75rem;
@@ -359,6 +367,9 @@ footer .socials a:hover {
 footer .brand p {
   color: var(--text-color-light);
   margin-bottom: 0.75rem;
+}
+footer .logo span {
+  font-size: 1rem;
 }
 .logo-alt span {
   color: var(--body-color);
@@ -403,7 +414,7 @@ footer .brand p {
     justify-content: space-between;
   }
 
-  footer .logo {
+  footer .logo span{
     font-size: 2rem;
   }
 }
