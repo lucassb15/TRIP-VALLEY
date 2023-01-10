@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?nbg9nf');
-  src:  url('fonts/icomoon.eot?nbg9nf#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?nbg9nf') format('truetype'),
-    url('fonts/icomoon.woff?nbg9nf') format('woff'),
-    url('fonts/icomoon.svg?nbg9nf#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?gplk4t');
+  src:  url('fonts/icomoon.eot?gplk4t#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?gplk4t') format('truetype'),
+    url('fonts/icomoon.woff?gplk4t') format('woff'),
+    url('fonts/icomoon.svg?gplk4t#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,63 +25,63 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-one-finger-click:before {
-  content: "\e912";
-}
-.icon-group:before {
-  content: "\e90e";
-}
-.icon-people:before {
-  content: "\e90e";
-}
-.icon-directions_bus:before {
-  content: "\e90f";
-}
-.icon-phone:before {
+.icon-linkedin:before {
   content: "\e900";
 }
-.icon-briefcase:before {
+.icon-phone:before {
   content: "\e901";
 }
-.icon-close:before {
+.icon-briefcase:before {
   content: "\e902";
 }
-.icon-facebook:before {
+.icon-close:before {
   content: "\e903";
 }
-.icon-instagram:before {
+.icon-facebook:before {
   content: "\e904";
 }
-.icon-mail:before {
+.icon-instagram:before {
   content: "\e905";
 }
-.icon-map-pin:before {
+.icon-mail:before {
   content: "\e906";
 }
-.icon-menu:before {
+.icon-map-pin:before {
   content: "\e907";
 }
-.icon-whatsapp:before {
+.icon-menu:before {
   content: "\e908";
 }
-.icon-youtube:before {
+.icon-whatsapp:before {
   content: "\e909";
 }
-.icon-Church:before {
+.icon-youtube:before {
   content: "\e90a";
 }
-.icon-Mountain:before {
+.icon-Church:before {
   content: "\e90b";
 }
-.icon-Park:before {
+.icon-Mountain:before {
   content: "\e90c";
 }
-.icon-zoom-in:before {
-  content: "\e910";
-}
-.icon-arrow-up:before {
+.icon-Park:before {
   content: "\e90d";
 }
-.icon-map:before {
+.icon-arrow-up:before {
+  content: "\e90e";
+}
+.icon-group:before {
+  content: "\e90f";
+}
+.icon-directions_bus:before {
+  content: "\e910";
+}
+.icon-zoom-in:before {
   content: "\e911";
+}
+.icon-map:before {
+  content: "\e912";
+}
+.icon-one-finger-click:before {
+  content: "\e913";
 }
