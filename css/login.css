@@ -92,7 +92,7 @@ body {
 }
 .button {
   background-color: hsla(210, 61%, 62%, 1);
-  color: hsla(0, 0%, 19%, 1);
+  color: var(--title-color);
   width: 100%;
   height: 3rem;
   border-radius: 0.4rem;
@@ -381,12 +381,11 @@ footer .logo span {
   user-select: none;
 }
 @media (min-width: 1200px) {
-    .container {
+  .container {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
   }
- 
 
   .section {
     padding: 10rem 0;
@@ -395,14 +394,19 @@ footer .logo span {
     background: hsla(210, 76%, 53%, 0.5);
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 45% !important;
     padding: 1.25rem 2.875rem;
     text-align: center;
+    
   }
-  .trip-logo {
-    width: 12%;
+  header .trip-logo {
+    margin-top: 2rem;
+    width: 11% !important;
     height: max-content;
-}
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
   /* footer */
   footer.section {
     padding: 3.75rem 0;
@@ -414,17 +418,16 @@ footer .logo span {
     justify-content: space-between;
   }
 
-  footer .logo span{
+  footer .logo span {
     font-size: 2rem;
   }
 }
 @media (min-width: 1023px) {
-    .container {
+  .container {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
   }
- 
 
   .section {
     padding: 10rem 0;
@@ -438,9 +441,11 @@ footer .logo span {
     text-align: center;
   }
   .trip-logo {
-    width: 12%;
+    margin-top: 2rem;
+    width: 12% !important;
     height: max-content;
-}
+  }
+
   /* footer */
   footer.section {
     padding: 3.75rem 0;
@@ -457,12 +462,12 @@ footer .logo span {
   }
 }
 @media (min-width: 992px) {
-   :root {
+  :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
-   /* layout */
-   .container {
+  /* layout */
+  .container {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
@@ -483,9 +488,11 @@ footer .logo span {
     text-align: center;
   }
   .trip-logo {
-    width: 12%;
+    margin-top: 2rem;
+    width: 12% !important;
     height: max-content;
-}
+  }
+ 
   /* footer */
   footer.section {
     padding: 3.75rem 0;
@@ -502,51 +509,74 @@ footer .logo span {
   }
 }
 @media (min-width: 767px) {
-    :root {
-        --title-font-size: 2.25rem;
-        --subtitle-font-size: 1.125rem;
-      }
-       /* layout */
-       .container {
-        max-width: 1120px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    
-      .section {
-        padding: 10rem 0;
-      }
-    
-      .section header {
-        max-width: 32rem;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-      }
-   #login .container {
-     background: hsla(210, 76%, 53%, 0.5);
-     margin-left: auto;
-     margin-right: auto;
-     width: 60%;
-     padding: 1.25rem 2.875rem;
-     text-align: center;
-   }
-   .trip-logo {
-     width: 18%;
-     height: max-content;
- }
-   /* footer */
-   footer.section {
-     padding: 3.75rem 0;
-   }
- 
-   footer .container {
-     grid-auto-flow: column;
-     align-items: center;
-     justify-content: space-between;
-   }
- 
-   footer .logo {
-     font-size: 2rem;
-   }
- }
+  :root {
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
+  }
+  /* layout */
+  .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+
+  .section header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #login .container {
+    background: hsla(210, 76%, 53%, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 1.25rem 2.875rem;
+    text-align: center;
+  }
+  .trip-logo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 12%;
+    height: max-content;
+  }
+  .trip-logo-text {
+    font-size: 1.6rem !important;
+  }
+  .trip-logo-text span {
+    font-size: 1rem !important;
+  }
+  /* footer */
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 766px){
+  .trip-logo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 15%;
+    height: max-content;
+  }
+  .trip-logo-text {
+    font-size: 1.2rem !important;
+  }
+  .trip-logo-text span {
+    font-size: .9rem !important;
+  }
+}

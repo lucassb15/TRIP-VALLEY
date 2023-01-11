@@ -204,9 +204,12 @@ footer .logo:hover {
 
 /* RESPONSIVE */
 @media (min-width: 1024px) {
+  
   /* logo img */
   .trip-logo {
-    width: 15%;
+    width: 10%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     height: max-content;
   }
 
@@ -215,6 +218,7 @@ footer .logo:hover {
     background: hsla(210, 76%, 53%, 0.5);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 4rem;
     width: 60%;
     padding: 1.25rem 1.875rem;
     padding-bottom: 0.2rem;
@@ -242,7 +246,9 @@ footer .logo:hover {
   
   /* logo img */
   .trip-logo {
-    width: 17%;
+    width: 12%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     height: max-content;
   }
 
@@ -251,6 +257,7 @@ footer .logo:hover {
     background: hsla(210, 76%, 53%, 0.5);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3rem;
     width: 65%;
     padding: 1.25rem 1.875rem;
     padding-bottom: 0.2rem;
@@ -277,15 +284,23 @@ footer .logo:hover {
 @media (max-width: 992px) {
   /* logo img */
   .trip-logo {
-    width: 17%;
+    width: 12%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     height: max-content;
   }
-
+  .trip-logo-text {
+    font-size: 1.6rem !important;
+  }
+  .trip-logo-text span {
+    font-size: 1rem !important;
+  }
   /* form container */
   #register .container {
     background: hsla(210, 76%, 53%, 0.5);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3rem;
     width: 70%;
     padding: 1.25rem 1.875rem;
     padding-bottom: 0.2rem;
