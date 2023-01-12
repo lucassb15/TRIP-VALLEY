@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trip Valley Meu Perfil</title>
+    <title>Trip Valley Meus Pontos</title>
 
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
@@ -16,10 +16,8 @@
     <!-- ICONS -->
     <link rel="stylesheet" href="../assets/fonts/icons/style.css">
     <!-- STYLES -->
-
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/userProfile.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/userPoints.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,28 +87,76 @@
             <div class="toggle icon-close"></div>
         </nav>
     </header>
+
+
     <!-- EDIT PROFILE -->
 
-    <section class="" id="login">
-        <a href="../index.html"><i class="icon-paperplane"></i></a>
+    <section id="profile">
+       
         <div class="container grid">
-            <h1 class="title">Dados cadastrais</h1>
-            <form action="">
-                <div class="client-info">
-                    <input class="width-flex" type="text" name="name" id="name" placeholder="Nome Completo"
-                        autocomplete="off">
-                    <input class="width-flex" type="number" name="number" id="number" maxlength="11" placeholder="CPF"
-                        autocomplete="off">
-                    <input class="width-flex" type="date" name="date" id="date" placeholder="Data de nascimento"
-                        autocomplete="off">
-                    <input class="width-flex" name="email" type="text" id="email" placeholder="Email" />
-                    <input class="width-flex" type="number" name="number" id="phone" placeholder="Telefone"
-                        autocomplete="off">
+            <a href="../pages/userProfile.html"><i class="icon-paperplane"></i></a>
+            <!-- Points container -->
+            <div class="container-items"  id="points">
+                <div  class="container-text" >
+                    <!-- <img class="points-icon " src="../assets/img/points-icon.png" alt=""> -->
+                    <i class="icon-box"></i>
+                    <h1 class="title ">Seus pontos</h1>
                 </div>
-                <div class="grid-button">
-                    <input class="button sub" type="submit" value="Salvar Alterações">
+                <div  class="container-points points-value">
+                    <h1 class="title ">0 pts</h1>
                 </div>
-            </form>
+            </div>
+        </div>
+
+        <!-- Trip Club container -->
+        <div id="club" class="container-items">
+            <div class="container-club">
+                <img class="trip-valley-logo-img" src="../assets/img/TripValleyLogo.webp" alt="">
+                <h1 class="title-club">Faça parte do TripClub e ganhe vantagens!</h1>
+                <input class="button sub" type="submit" value="Conhecer o TripClub">
+            </div>
+        </div>
+
+        <!-- Benefits points -->
+        <div id="benefits" class="container-benefits">
+
+            <div class="benefits-title">
+                <h2 class="title">Acumule pontos e <span>viaje mais com TripValley</span></h2>
+            </div>
+            
+            <div class="benefits" >
+
+                <div class="info-card">
+                    <div class="circle-box">
+                        <span class="circle"></span>
+                        <i class="icon-shopping-cart"></i>
+                    </div>
+                    <div class="text-info">
+                        <p>Você gera<strong> pontos</strong> para cada <strong> compra</strong> que realiza</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="circle-box">
+                        <span class="circle"></span>
+                        <i class="icon-box"></i>
+                    </div>
+                    <div class="text-info">
+                        <p>Sempre que<strong> finalizar</strong> uma viagem, você receberá seus<strong> pontos</strong> acumulados</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="circle-box">
+                        <span class="circle"></span>
+                        <i class="icon-paperplane"></i>
+                    </div>
+                    <div class="text-info">
+                        <p>Use seus <strong>pontos</strong> para pagar viagens, seja o valor inteiro ou parte dele</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- FOOTER -->

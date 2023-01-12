@@ -72,9 +72,42 @@
                     <li><a class="title" href="#packages">Pacotes</a></li>
                     <li><a class="title" href="#contact">Contato</a></li>
                     <!-- </div> -->
+
                     <!-- User icon -->
                     <div class="user-area">
-                        <a href="./pages/login.html" target="_blank"><img src="./assets/img/user-icon.png" type=""></a>
+                        <img class="user-pic" src="./assets/img/user-icon.png" onclick="toggleMenu()">
+                    </div>
+
+                    <!-- User menudrop -->
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="uer-info">
+                                <img class="user-pic" src="./assets/img/user-icon.png" alt="">
+                                <h1 class="subtitle">Olá, Sofia Moretti!</h1>
+                            </div>
+                            <hr>
+
+                            <a href="#" class="sub-menu-link">
+
+                                <p>Minhas viagens</p>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+
+                                <p>Trip pontos</p>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+
+                                <p>Editar Perfil</p>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+
+                                <p>Favoritos</p>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+
+                                <p>Sair</p>
+                            </a>
+                        </div>
                     </div>
                 </ul>
 
@@ -86,6 +119,7 @@
     </header>
 
     <main>
+        <a href="./pages/login.html"><i class="icon-box"></i></a>
         <!-- HOME -->
         <section class="section" id="home">
             <div class="container grid">
