@@ -1,6 +1,16 @@
+
+// Menu toggle User profile
+
+let subMenu = document.getElementById("subMenu");
+
+function toggleMenu(){
+    subMenu.classList.toggle("open-menu");
+};
+
 //  Abre e fecha o menu
 const nav = document.querySelector('#header nav');
 const toggle = document.querySelectorAll('nav .toggle');
+
 // overflow hidden
 const overflowHidden = document.querySelector('body');
 
@@ -22,7 +32,6 @@ for (const link of links) {
        
     });
 };
-
 //  Adiciona sombra quando rolar a página
 const header = document.querySelector('#header');
 const navHeight = header.offsetHeight;
@@ -32,37 +41,6 @@ window.addEventListener('scroll', () => {
         header.classList.add('scroll')
     } else {
         header.classList.remove('scroll')
-    }
-});
-
-
-
-
-//  ScrollReveal: Mostra elementos quando der scroll
-const scrollReveal = ScrollReveal({
-    origin: 'top',
-    distance: '23px',
-    duration: 700,
-    reset: true
-});
-
-scrollReveal.reveal(`
-    #home .text, #home .image,
-    #services .text, #services .card,
-    #tour header,
-    #tourism header, 
-    #contact .text, #contact .links,
-    footer .brand, footer .socials
-`, { interval: 250 });
-
-
-//  Botão voltar para o topo
-const backToTopButton = document.querySelector('.back-to-top')
-window.addEventListener('scroll', () => {
-    if (window.scrollY >= 560) {
-        backToTopButton.classList.add('show')
-    } else {
-        backToTopButton.classList.remove('show')
     }
 });
 
@@ -96,13 +74,4 @@ function activateMenuAtCurrentSection() {
 
     }
 
-}
-
-// Menu toggle User profile
-
-let subMenu = document.getElementById("subMenu");
-
-function toggleMenu(){
-    subMenu.classList.toggle("open-menu");
-}
-
+};
