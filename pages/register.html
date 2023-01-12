@@ -38,7 +38,6 @@
 
 
     <main>
-        <a href="../pages/userPoints.html"><i class="icon-box"></i></a>
         <!-- LOGIN -->
         <section class="" id="register">
             <div class="container grid">
@@ -101,15 +100,14 @@
                             pattern="\(\d{2}\)\s*\d{4}-\d{4}">
 
                         <!-- Email - Repetir Email -->
-                        <input name="email" type="text" id="email" placeholder="Email" required />
+                        <input name="email" type="text" id="email" placeholder="Email" />
                         <input name="emailConfirm" type="text" id="confemail" onblur="confirmEmail()"
-                            placeholder="Repetir email" required />
+                            placeholder="Repetir email" />
 
                         <!-- Senha - Confirmar senha -->
-                        <input class="width-flex" name="password" type="password" id="password" placeholder="Senha"
-                            required />
+                        <input class="width-flex" name="password" type="password" id="password" placeholder="Senha" />
                         <input class="width-flex" name="passwordConfirm" type="password" id="confpassword"
-                            onblur="confirmPassword()" placeholder="Repetir senha" required />
+                            onblur="confirmPassword()" placeholder="Repetir senha" />
 
                         <!-- Termos e condições -->
                         <div class="tacbox">
@@ -119,9 +117,12 @@
                         </div>
                     </div>
 
+                    <!-- botão provisório para navegar entre as paginas -->
+                    <a href="../pages/userPoints.html">
+                        <button class="button" type="button">REGISTRAR</button>
+                    </a>
+                    <!-- <input class="button sub" type="submit" value="REGISTRAR"> -->
 
-
-                    <input class="button sub" type="submit" value="REGISTRAR">
                 </form>
 
             </div>
