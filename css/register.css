@@ -204,7 +204,6 @@ footer .logo:hover {
 
 /* RESPONSIVE */
 @media (min-width: 1024px) {
-  
   /* logo img */
   .trip-logo {
     width: 10%;
@@ -243,7 +242,6 @@ footer .logo:hover {
 }
 
 @media (max-width: 1023px) {
-  
   /* logo img */
   .trip-logo {
     width: 12%;
@@ -325,9 +323,8 @@ footer .logo:hover {
 }
 
 @media (max-width: 767px) {
- 
-   /* logo img */
-   .trip-logo {
+  /* logo img */
+  .trip-logo {
     width: 18%;
     height: max-content;
   }
@@ -337,7 +334,7 @@ footer .logo:hover {
     background: hsla(210, 76%, 53%, 0.5);
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: auto;
     padding: 1.25rem 1.875rem;
     padding-bottom: 0.2rem;
     text-align: center;
@@ -357,5 +354,8 @@ footer .logo:hover {
 
   footer .logo {
     font-size: 2.25rem;
+  }
+  footer .socials {
+    font-size: 0rem;
   }
 }
