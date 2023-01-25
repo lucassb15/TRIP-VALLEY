@@ -50,16 +50,16 @@ a:hover {
 :root {
   --header-height: 3.5rem;
   /* Colors */
-  --hue: 210;
+  --hue: 212;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 70% 50%);
-  --base-color-second: hsl(var(--hue) 78% 53%);
-  --base-color-alt: hsl(var(--hue) 49% 50%);
-  --title-color: hsl(var(--hue) 41% 10%);
+  --base-color: hsl(var(--hue) 95% 62%); /* #4298fa*/ 
+  --base-color-second: hsl(var(--hue) 73% 64%); /*#609fe6*/
+  --base-color-alt: hsl(var(--hue) 83% 72%); /* #749bc8 */
+  --title-color: hsl(var(--hue) 41% 10%); /*#0f1924   */ 
   --text-color: hsl(0 0% 46%);
-  --text-color-light: hsl(0 0% 98%);
-  --body-color: rgb(255, 255, 255);
-  --swiper-theme-color: hsl(var(--hue) 36% 57%);
+  --text-color-light: #000;
+  --body-color: #ffffff;
+  --swiper-theme-color: hsl(var(--hue) 36% 57%); /*#6A91B9  */
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -492,7 +492,14 @@ footer .logo span {
     width: 12% !important;
     height: max-content;
   }
- 
+ /* form */
+ form label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+ }
+ .text-click-settings {
+  font-size: 1rem;
+ }
   /* footer */
   footer.section {
     padding: 3.75rem 0;
