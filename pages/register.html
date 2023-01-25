@@ -42,28 +42,47 @@
         <section class="" id="register">
             <div class="container grid">
                 <h1 class="title">Cadastro de Cliente</h1>
-                <form action="">
+                <form action="" method="post">
                     <div class="client-info">
 
                         <!-- NOME - GÊNERO -->
+                        <div class="input-container">
+                            <div>
+                        <label class="subtitle" for="">Nome</label>
                         <input class="width-flex" type="name" name="name" id="name" placeholder="Nome completo"
                             autocomplete="off">
+                        </div>
+                        <div>
+                        <label class="subtitle" for="">Gênero</label>
                         <select name="gender width-flex">
-                            <option value="none" selected>Gênero</option>
-                            <option value="Homem">Homem</option>
-                            <option value="Mulher">Mulher</option>
+                            <option value="Masculino" selected>Masculino</option>
+                            <option value="Feminino">Feminino</option>
                             <option value="Outro">Outro</option>
                             <option value="Outro">Prefiro não responder</option>
                         </select>
-
+                    </div>
+                    </div>
                         <!-- CPF - DATA -->
+                        <div class="input-container">
+                            <div class="m-t">
+                        <label class="subtitle" for="">CPF</label>
                         <input class="width-flex" type="number" name="number" id="number" maxlength="11"
                             placeholder="CPF" autocomplete="off">
+                        </div>
+                        <div>
+                        <label class="subtitle" for="">Data de Nascimento</label>
                         <input class="width-flex" type="date" name="date" id="date" placeholder="DD/MM/AAAA">
-
+                    </div>
+                    </div>
                         <!-- CIDADE - ESTADO -->
+                        <div class="input-container-city">
+                            <div>
+                        <label class="subtitle" for="">Cidade</label>
                         <input class="width-flex" type="city" name="city" id="city" placeholder="Cidade"
                             autocomplete="off" minlength="3">
+                        </div>
+                        <div>
+                            <label class="subtitle" for="">Estado</label>
                         <select name="gender width-flex">
                             <option value="none" selected>Estado</option>
                             <option value="ac">AC</option>
@@ -94,20 +113,36 @@
                             <option value="se">SE</option>
                             <option value="to">TO</option>
                         </select>
-
+                    </div>
+                    </div>
+                    <div class="input-container-t-e">
                         <!-- Telefone -->
-                        <input type="tel" class="form-control" id="tel" name="tel" placeholder="Telefone" maxlength="14"
+                        <label class="subtitle " for="">Telefone</label>
+                        <input  type="tel" class="form-control w-m" id="tel" name="tel" placeholder="Telefone" maxlength="14"
                             pattern="\(\d{2}\)\s*\d{4}-\d{4}">
 
                         <!-- Email - Repetir Email -->
-                        <input name="email" type="text" id="email" placeholder="Email" />
-                        <input name="emailConfirm" type="text" id="confemail" onblur="confirmEmail()"
-                            placeholder="Repetir email" />
-
+                        <label class="subtitle" for="">E-mail</label>
+                        <input class="w-m" name="email" type="text" id="email" placeholder="E-mail" />
+                        <label class="subtitle" for="">Confirmar E-mail</label>
+                        <input  class="w-m" name="emailConfirm" type="text" id="confemail" onblur="confirmEmail()"
+                            placeholder="Repetir E-mail" />
+                        </div>
                         <!-- Senha - Confirmar senha -->
-                        <input class="width-flex" name="password" type="password" id="password" placeholder="Senha" />
-                        <input class="width-flex" name="passwordConfirm" type="password" id="confpassword"
-                            onblur="confirmPassword()" placeholder="Repetir senha" />
+                        <div class="input-container">
+                            <div>
+                                <label class="subtitle" for="">Senha</label>
+                            <input class="width-flex" name="password" type="password" id="password" placeholder="Senha" />
+                            </div>
+                            <div>
+                                <label class="subtitle " for="">Confirmar senha</label>
+                            <input class="width-flex" name="passwordConfirm" type="password" id="confpassword"
+                                onblur="confirmPassword()" placeholder="Repetir senha" />
+                            </div>
+                            
+                        </div>
+                      
+                       
 
                         <!-- Termos e condições -->
                         <div class="tacbox">
@@ -119,7 +154,7 @@
 
                     <!-- botão provisório para navegar entre as paginas -->
                     <a href="../pages/userPoints.html">
-                        <button class="button" type="button">REGISTRAR</button>
+                        <button  style="width: 70%;" class="button" type="button">REGISTRAR</button>
                     </a>
                     <!-- <input class="button sub" type="submit" value="REGISTRAR"> -->
 
