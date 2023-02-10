@@ -20,6 +20,7 @@
   --body-font: "DM Sans", sans-serif;
 }
 
+
 /* container */
 #profile .container {
   margin-left: auto;
@@ -44,7 +45,7 @@
   gap: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: var(--base-color);
+  background-color: hsla(210, 76%, 53%, 0.5);
 }
 .container-text {
   display: flex;
@@ -54,7 +55,7 @@
   gap: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: var(--base-color);
+  background-color: hsla(210, 76%, 53%, 0.5);
 }
 /*  */
 /* points icon style */
@@ -87,7 +88,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: var(--base-color);
+  background-color: hsla(210, 76%, 53%, 0.5);
   border-radius: 0.5rem;
   gap: 2%;
   align-items: center;
@@ -126,6 +127,9 @@
   text-align: center;
   margin-bottom: 0rem;
   margin-top: 0.6rem;
+}
+.button:hover {
+  background-color: hsla(210, 76%, 53%, 1);
 }
 /*  */
 /* trip club title text */
@@ -176,7 +180,7 @@
 }
 #benefits span.circle {
   position: relative;
-  background: var(--base-color);
+  background-color: hsla(210, 76%, 53%, 0.5);
   height: 6.4rem;
   width: 6.4rem;
   border-radius: 50%;

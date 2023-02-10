@@ -59,8 +59,8 @@ body {
 }
 
 .button {
-  background-color: var(--base-color);
-  color: var(--text-color-light);
+  background-color: #151515;
+  color: #ebebeb;
   height: 3.5rem;
   display: inline-flex;
   align-items: center;
@@ -682,6 +682,9 @@ footer i {
   color: var(--text-color-light);
 }
 
+footer i:hover {
+  color: white;
+}
 footer .socials a {
   transition: 0.3s;
   display: inline-block;

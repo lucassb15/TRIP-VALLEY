@@ -33,33 +33,43 @@ a {
   color: hsla(210, 77%, 49%, 1);
   transition: 0.2s;
 }
+
 #login .text-click-settings {
   color: hsla(210, 77%, 49%, 1);
   transition: 0.2s;
 }
+
 #login .icon-settings:hover {
   color: white;
 }
+
 #login .text-click-settings:hover {
   color: white;
 }
+
 a:hover {
   color: var(--text-color-light);
 }
+
 /*=== VARIABLES ===============================*/
 :root {
   --header-height: 3.5rem;
   /* Colors */
   --hue: 212;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 95% 62%); /* #4298fa*/ 
-  --base-color-second: hsl(var(--hue) 73% 64%); /*#609fe6*/
-  --base-color-alt: hsl(var(--hue) 83% 72%); /* #749bc8 */
-  --title-color: hsl(var(--hue) 41% 10%); /*#0f1924   */ 
+  --base-color: hsl(var(--hue) 95% 62%);
+  /* #4298fa*/
+  --base-color-second: hsl(var(--hue) 73% 64%);
+  /*#609fe6*/
+  --base-color-alt: hsl(var(--hue) 83% 72%);
+  /* #749bc8 */
+  --title-color: hsl(var(--hue) 41% 10%);
+  /*#0f1924   */
   --text-color: hsl(0 0% 46%);
   --text-color-light: #000;
   --body-color: #ffffff;
-  --swiper-theme-color: hsl(var(--hue) 36% 57%); /*#6A91B9  */
+  --swiper-theme-color: hsl(var(--hue) 36% 57%);
+  /*#6A91B9  */
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -90,9 +100,10 @@ body {
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
+
 .button {
-  background-color: hsla(210, 61%, 62%, 1);
-  color: var(--title-color);
+  background-color: #151515;
+  color: #ebebeb;
   width: 100%;
   height: 3rem;
   border-radius: 0.4rem;
@@ -114,8 +125,9 @@ body {
 }
 
 .button:hover {
-  background: var(--base-color-alt);
+  background-color: rgb(40, 142, 244);
 }
+
 /*=== LAYOUT ===============================*/
 .container {
   margin-left: 1.5rem;
@@ -182,6 +194,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: hsla(214, 100%, 50%, 0.5);
 }
+
 .no-select {
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -198,6 +211,7 @@ body {
   padding: 1.25rem 1.875rem;
   text-align: center;
 }
+
 /* logo */
 .logo-container {
   display: flex;
@@ -209,6 +223,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .trip-logo-text {
   width: max-content;
   height: max-content;
@@ -225,19 +240,23 @@ header .section {
 header .logo-alt span {
   color: var(--base-color);
 }
+
 header .logo span {
   font-size: 1rem;
 }
+
 header .logo {
   font: 700 1.31rem var(--title-font);
   color: black;
   margin-top: 0.2rem;
   user-select: none;
 }
+
 .trip-logo {
   width: 30%;
   height: max-content;
 }
+
 /* form */
 form {
   margin-top: 1.875rem;
@@ -251,6 +270,7 @@ input {
   text-align: left;
   font-family: var(--body-font);
 }
+
 label {
   font-weight: bold;
   font-size: 0.8rem;
@@ -288,10 +308,12 @@ input:focus {
   background: #3b5998;
   color: white;
 }
+
 .fa-linkedin {
   background: #007bb5;
   color: white;
 }
+
 .fa {
   line-height: 40px;
   font-size: 20px;
@@ -319,6 +341,7 @@ input:focus {
   width: auto;
   gap: 0.2rem;
 }
+
 /*=== FOOTER ================================*/
 
 footer {
@@ -333,12 +356,14 @@ footer .logo {
   display: inline-block;
   margin-bottom: 1.5rem;
 }
+
 footer .logo {
   font: 700 2rem var(--title-font);
   color: var(--title-color);
   margin-top: 0.2rem;
   user-select: none;
 }
+
 footer .brand p {
   color: var(--text-color-light);
   margin-bottom: 0.75rem;
@@ -353,9 +378,11 @@ footer .socials a {
   transition: 0.3s;
   display: inline-block;
 }
+
 footer .socials span {
   opacity: 0;
 }
+
 footer .socials {
   grid-auto-flow: column;
   width: fit-content;
@@ -364,22 +391,27 @@ footer .socials {
 footer .socials a:hover {
   transform: translateY(-8px);
 }
+
 footer .brand p {
   color: var(--text-color-light);
   margin-bottom: 0.75rem;
 }
+
 footer .logo span {
   font-size: 1rem;
 }
+
 .logo-alt span {
   color: var(--body-color);
 }
+
 .logo {
   font: 700 1.31rem var(--title-font);
   color: var(--title-color);
   margin-top: 0.2rem;
   user-select: none;
 }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1120px;
@@ -390,6 +422,7 @@ footer .logo span {
   .section {
     padding: 10rem 0;
   }
+
   #login .container {
     background: hsla(210, 76%, 53%, 0.5);
     margin-left: auto;
@@ -397,8 +430,9 @@ footer .logo span {
     width: 45% !important;
     padding: 1.25rem 2.875rem;
     text-align: center;
-    
+
   }
+
   header .trip-logo {
     margin-top: 2rem;
     width: 11% !important;
@@ -406,7 +440,7 @@ footer .logo span {
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  
+
   /* footer */
   footer.section {
     padding: 3.75rem 0;
@@ -422,6 +456,7 @@ footer .logo span {
     font-size: 2rem;
   }
 }
+
 @media (min-width: 1023px) {
   .container {
     max-width: 1120px;
@@ -432,6 +467,7 @@ footer .logo span {
   .section {
     padding: 10rem 0;
   }
+
   #login .container {
     background: hsla(210, 76%, 53%, 0.5);
     margin-left: auto;
@@ -440,6 +476,7 @@ footer .logo span {
     padding: 1.25rem 2.875rem;
     text-align: center;
   }
+
   .trip-logo {
     margin-top: 2rem;
     width: 12% !important;
@@ -461,17 +498,20 @@ footer .logo span {
     font-size: 2rem;
   }
 }
+
 @media (min-width: 992px) {
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
+
   /* layout */
   .container {
     max-width: 1120px;
     margin-left: auto;
     margin-right: auto;
   }
+
   main {
     margin-top: var(--header-height);
   }
@@ -479,6 +519,7 @@ footer .logo span {
   .section {
     padding: 10rem 0;
   }
+
   #login .container {
     background: hsla(210, 76%, 53%, 0.5);
     margin-left: auto;
@@ -487,19 +528,23 @@ footer .logo span {
     padding: 1.25rem 2.875rem;
     text-align: center;
   }
+
   .trip-logo {
     margin-top: 2rem;
     width: 12% !important;
     height: max-content;
   }
- /* form */
- form label {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
- }
- .text-click-settings {
-  font-size: 1rem;
- }
+
+  /* form */
+  form label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+
+  .text-click-settings {
+    font-size: 1rem;
+  }
+
   /* footer */
   footer.section {
     padding: 3.75rem 0;
@@ -515,11 +560,13 @@ footer .logo span {
     font-size: 2rem;
   }
 }
+
 @media (min-width: 767px) {
   :root {
     --title-font-size: 2.25rem;
     --subtitle-font-size: 1.125rem;
   }
+
   /* layout */
   .container {
     max-width: 1120px;
@@ -537,6 +584,7 @@ footer .logo span {
     margin-left: auto;
     margin-right: auto;
   }
+
   #login .container {
     background: hsla(210, 76%, 53%, 0.5);
     margin-left: auto;
@@ -545,18 +593,22 @@ footer .logo span {
     padding: 1.25rem 2.875rem;
     text-align: center;
   }
+
   .trip-logo {
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 12%;
     height: max-content;
   }
+
   .trip-logo-text {
     font-size: 1.6rem !important;
   }
+
   .trip-logo-text span {
     font-size: 1rem !important;
   }
+
   /* footer */
   footer.section {
     padding: 3.75rem 0;
@@ -573,16 +625,18 @@ footer .logo span {
   }
 }
 
-@media (max-width: 766px){
+@media (max-width: 766px) {
   .trip-logo {
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 15%;
     height: max-content;
   }
+
   .trip-logo-text {
     font-size: 1.2rem !important;
   }
+
   .trip-logo-text span {
     font-size: .9rem !important;
   }

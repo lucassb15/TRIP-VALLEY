@@ -43,13 +43,13 @@ input[type="number"] {
   justify-items: end;
 }
 .button {
-  display: grid;
-  line-height: none;
-  letter-spacing: none;
-  text-transform: none;
-  width: 55%;
+  width: 60% !important;
   justify-content: center;
-  color: var(--title-color);
+  background-color: #303030 !important;
+  color: #ccc !important;
+}
+.button:hover {
+  background-color: rgb(40, 142, 244) !important;
 }
 .user-area img {
   display: flex;

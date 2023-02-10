@@ -98,8 +98,8 @@ header .logo span {
 
 /* === button style === */
 .button {
-  background-color: hsla(210, 61%, 62%, 1);
-  color: var(--title-color);
+  background-color: #151515;
+  color: #ebebeb; 
   width: 100%;
   height: 3rem;
   border-radius: 0.4rem;
@@ -119,7 +119,9 @@ header .logo span {
   margin-top: 1.563rem;
   margin-bottom: 0rem;
 }
-
+.button:hover {
+  background-color: rgb(40, 142, 244);
+}
 /* CPF remove arrows */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
