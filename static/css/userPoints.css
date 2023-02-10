@@ -1,0 +1,299 @@
+/*=== VARIABLES ===============================*/
+:root {
+  --header-height: 3.5rem;
+  /* Colors */
+  --hue: 212;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 95% 62%); /* #4298fa*/ 
+  --base-color-second: hsl(var(--hue) 73% 64%); /*#609fe6*/
+  --base-color-alt: hsl(var(--hue) 83% 72%); /* #749bc8 */
+  --title-color: hsl(var(--hue) 41% 10%); /*#0f1924   */ 
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: #000;
+  --body-color: #ffffff;
+  --swiper-theme-color: hsl(var(--hue) 36% 57%); /*#6A91B9  */
+
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+  --title-font: "Poppins", sans-serif;
+  --body-font: "DM Sans", sans-serif;
+}
+
+/* container */
+#profile .container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5.8rem;
+  width: 90%;
+  margin-bottom: 4rem;
+}
+/* container items */
+.container-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* container points */
+.container-points {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--base-color);
+}
+.container-text {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--base-color);
+}
+/*  */
+/* points icon style */
+.points-icon {
+  width: 15%;
+  height: auto;
+}
+.icon-box {
+    color: var(--title-color);
+    font-size: 3.3rem;
+    font-weight: lighter;
+}
+/*  */
+/* title font  */
+#profile .title {
+  font-size: 1.2rem;
+}
+
+/* points value container */
+
+.points-value {
+  width: 50%;
+}
+.points-value h1.title {
+  width: 50%;
+}
+
+/* TripClub container */
+.container-club {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var(--base-color);
+  border-radius: 0.5rem;
+  gap: 2%;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 1.2rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*  */
+/* Trip valley logo img */
+.trip-valley-logo-img {
+  width: 16%;
+}
+/*  */
+/* TripClub button */
+.button {
+  display: flex;
+  background-color: #303030;
+  color: white;
+  width: auto;
+  height: 2.2rem;
+  border-radius: 0.4rem;
+  justify-content: center;
+  padding: 0 1.5rem;
+  font: 500 1rem var(--body-font);
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8rem;
+  font-family: var(--title-font);
+  text-align: center;
+  margin-bottom: 0rem;
+  margin-top: 0.6rem;
+}
+/*  */
+/* trip club title text */
+.title-club {
+  color: var(--title-color);
+  font-size: 1rem;
+  width: 80%;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Benefits container */
+
+.container-benefits {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-bottom: 5rem;
+}
+
+.benefits {
+  display: flex;
+  width: 100%;
+  gap: 0.5rem;
+}
+/*  */
+
+/* info-card */
+.info-card {
+  width: 100%;
+}
+/* circle box */
+.circle-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#benefits i {
+  position: absolute;
+  justify-content: center;
+  color: black;
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+#benefits span.circle {
+  position: relative;
+  background: var(--base-color);
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+}
+/* text info card */
+#benefits .text-info {
+  color: var(--title-color);
+  height: 5rem;
+  font-size: 0.92rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+/* title benefits */
+#benefits .benefits-title h2,
+span {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.benefits-title span {
+  color: var(--base-color);
+}
+
+@media (min-width: 1100px) {
+  /* container */
+  #profile.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: none;
+    border: 1px solid blue;
+    margin: none;
+  }
+  #profile .container-items {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+    height: 80%;
+    margin: none;
+  }
+
+  .container-points.points-value {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .container-text {
+    display: flex;
+    width: 80%;
+  }
+  /* points value container */
+  
+
+  /* TripClub container */
+  #club .container-items {
+    display: flex;
+    width: auto;
+  }
+
+  #club .trip-valley-logo-img {
+    width: 11%;
+  }
+  #club .title-club {
+    width: auto;
+    text-align: left;
+  }
+  #club .button {
+    margin-bottom: 0.4rem;
+  }
+  /* benefits container */
+  #benefits .benefits {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .circle-box {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 767px) {
+  /* container */
+  #profile .container {
+    width: 88%;
+    padding: none;
+  }
+
+  /* points value container */
+  .points-icon {
+    width: auto;
+  }
+  .points-value {
+    width: 50%;
+  }
+  .points-value h1.title {
+    width: 50%;
+  }
+  /* TripClub container */
+  .trip-valley-logo-img {
+    width: 12%;
+  }
+  .title-club {
+    width: auto;
+    text-align: center;
+  }
+  .button {
+    margin-bottom: 0.4rem;
+  }
+  /* benefits container */
+  #benefits .benefits {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .circle-box {
+    margin-bottom: 0.5rem;
+  }
+}
