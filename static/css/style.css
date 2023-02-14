@@ -24,7 +24,7 @@ img {
   /* Colors */
   --hue: 212;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 95% 62%); /* #4298fa*/ 
+  --base-color: hsl(var(--hue) 95% 47%); /* #4298fa*/ 
   --base-color-second: hsl(var(--hue) 73% 64%); /*#609fe6*/
   --base-color-alt: hsl(var(--hue) 83% 72%); /* #749bc8 */
   --title-color: hsl(var(--hue) 41% 10%); /*#0f1924   */ 

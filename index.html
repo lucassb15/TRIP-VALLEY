@@ -318,13 +318,27 @@
   </footer>
   <div id="root"></div>
   <script type="module" src="/main.jsx"></script>
+
   <!-- BACK TO TOP ARROW -->
   <a href="#home" class="icon-arrow-up back-to-top"></a>
 
+  <!-- VLIBRAS -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
   <!-- SCROLL REVEAL -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <!-- MAIN.JS -->
   <script src="./static/js/main.js"></script>
+  <!-- # https://webaim.org/resources/contrastchecker/?fcolor=091623&bcolor=FFFFFF  color contrast whithe/black
+# https://webaim.org/resources/contrastchecker/?fcolor=FFFFFF&bcolor=0670EA color contrast blue/white  -->
 </body>
 
 </html>
