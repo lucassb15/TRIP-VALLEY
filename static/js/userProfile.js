@@ -3,7 +3,7 @@
 
 let subMenu = document.getElementById("subMenu");
 
-function toggleMenu(){
+function toggleMenu() {
     subMenu.classList.toggle("open-menu");
 };
 
@@ -18,7 +18,7 @@ for (const element of toggle) {
     element.addEventListener('click', () => {
         overflowHidden.classList.toggle('no-scroll');
         nav.classList.toggle('show');
-        
+
     });
 };
 
@@ -29,7 +29,7 @@ for (const link of links) {
     link.addEventListener('click', () => {
         overflowHidden.classList.remove('no-scroll');
         nav.classList.remove('show').overFlow();
-       
+
     });
 };
 //  Adiciona sombra quando rolar a página

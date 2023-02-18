@@ -10,7 +10,7 @@ function confirmEmail() {
         alert('Verifique se o endereço de e-mail está correto');
         
     }
-   
+
 }
 
 // PASSWORD VALIDATION
@@ -24,7 +24,7 @@ function confirmPassword() {
         alert('Verifique se repetiu a senha corretamente');
         
     }
-   
+
 }
 
 // TELEFONE FORMAT MASK //
