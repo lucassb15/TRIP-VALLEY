@@ -1,5 +1,6 @@
 'use client'
 
+
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -7,8 +8,6 @@ import {
     BookmarkSquareIcon,
     CalendarIcon,
     LifebuoyIcon,
-    PhoneIcon,
-    PlayIcon,
     ShieldCheckIcon,
     XMarkIcon,
     UserIcon,
@@ -18,7 +17,7 @@ import {
     InformationCircleIcon,
     RocketLaunchIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon} from '@heroicons/react/20/solid'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const solutions = [
     {
@@ -88,17 +87,13 @@ function classNames(...classes: any) {
 
 export default function Example() {
     return (
-        <Popover className="relative bg-white">
-            <div className="mx-auto max-w-7xl px-6">
-                <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+        <Popover className="static bg-white">
+            <div className="mx-auto px-0">
+                <div className="flex items-center justify-between border-b-2 border-gray-200 py-6 md:justify-start md:space-x-10 px-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <a href="#">
-                            <span className="sr-only">Your Company</span>
-                            <img
-                                className="h-8 w-auto sm:h-10"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
-                                alt=""
-                            />
+                            <span className="sr-only">Trip Valley</span>
+                            <h1 className='font-bold text-2xl'>TRIP<span className='text-blue-600'>valley</span><span>.</span></h1>
                         </a>
                     </div>
                     <div className="-my-2 -mr-2 md:hidden">
@@ -108,7 +103,7 @@ export default function Example() {
                         </Popover.Button>
                     </div>
                     <Popover.Group as="nav" className="hidden space-x-10 md:flex">
-                    <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Início
                         </a>
                         <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
@@ -222,7 +217,7 @@ export default function Example() {
                     </Popover.Group>
                     <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
                         <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                        Inscrever-se
+                            Inscrever-se
                         </a>
                         <a
                             href="#"
@@ -248,11 +243,10 @@ export default function Example() {
                         <div className="px-5 pt-5 pb-6">
                             <div className="flex items-center justify-between">
                                 <div>
-                                    <img
-                                        className="h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/mark.svg?color=blue&shade=600"
-                                        alt="Your Company"
-                                    />
+                                    <a href="#">
+                                        <span className="sr-only">Trip Valley</span>
+                                        <h1 className='font-bold text-2xl'>TRIP<span className='text-blue-600'>valley</span><span>.</span></h1>
+                                    </a>
                                 </div>
                                 <div className="-mr-2">
                                     <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
@@ -296,7 +290,7 @@ export default function Example() {
                                     Inscrever-se
                                 </a>
                                 <p className="mt-6 text-center text-base font-medium text-gray-500">
-                                Cliente existente?{' '}
+                                    Cliente existente?{' '}
                                     <a href="#" className="text-blue-600 hover:text-blue-500">
                                         Entrar
                                     </a>

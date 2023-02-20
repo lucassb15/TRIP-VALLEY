@@ -4,24 +4,25 @@ import { FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="bg-blue-600 text-white py-6 px-6 flex justify-between items-center">
-            <div className="container flex-col  gap-5">
+        <footer className="bg-blue-600 text-white py-10 px-10 grid grid-cols-2 space-x-20 justify-between items-center w-full md:space-x-64">
+
+            <div className="grid w-full">
                 <div>
-                    <h1 className="font-medium text-xl">TRIPvalley.</h1>
+                    <h1 className="font-medium text-xl">TRIP<span className='text-black'>valley</span>.</h1>
                 </div>
                 <div>
                     <p>&copy; {new Date().getFullYear()} Trip Valley. Todos os direitos reservados.</p>
                 </div>
             </div>
-            <div className="container flex flex-row gap-5 text-white text-2xl ">
+            <div className="grid grid-cols-3  ">
                 <a href="https://instagram.com" target={'_blank'}>
-                    <FaInstagram className=' hover:text-black transition duration-300 ' />
+                    <FaInstagram className='text-white text-2xl hover:text-black transition duration-300 ' />
                 </a>
                 <a href="https://facebook.com" target={'_blank'}>
-                    <FaFacebookF className=' hover:text-black transition duration-300 ' />
+                    <FaFacebookF className='text-white text-2xl hover:text-black transition duration-300 ' />
                 </a>
                 <a href="https://facebook.com" target={'_blank'}>
-                    <FaTwitter className=' hover:text-black transition duration-300 ' />
+                    <FaTwitter className='text-white text-2xl hover:text-black transition duration-300 ' />
                 </a>
             </div>
         </footer>
