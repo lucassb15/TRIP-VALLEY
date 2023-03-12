@@ -16,7 +16,7 @@
 ::-webkit-scrollbar-thumb {
   background-color: #2563EB; /* cor do polegar */
   border-radius: 5px; /* borda arredondada do polegar */
-  border: 2px solid #f1f1f1; /* borda do polegar */
+  border: 1px solid #f1f1f1; /* borda do polegar */
 }
 ::-webkit-scrollbar-thumb:hover{
     background-color: rgba(71, 127, 251, 1);

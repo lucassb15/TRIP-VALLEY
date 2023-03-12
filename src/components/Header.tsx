@@ -81,11 +81,11 @@ const resources = [
 ]
 
 
-function classNames(...classes: any) {
+function classNames(...classes: any): any {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Example(): JSX.Element {
     return (
         <Popover className="static bg-white">
             <div className="mx-auto px-0">
