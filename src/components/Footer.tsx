@@ -2,7 +2,7 @@ import { FaFacebookF } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 
-const Footer = () => {
+function Footer(): JSX.Element {
     return (
         <footer className="bg-blue-600 text-white py-10 px-10 grid grid-cols-2 space-x-20 justify-between items-center w-full md:space-x-64">
 
@@ -27,6 +27,6 @@ const Footer = () => {
             </div>
         </footer>
     );
-};
+}
 
 export default Footer;
