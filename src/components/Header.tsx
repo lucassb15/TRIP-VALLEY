@@ -1,6 +1,6 @@
 'use client'
 
-
+import Link from "next/link"
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -103,9 +103,9 @@ export default function Example() {
                         </Popover.Button>
                     </div>
                     <Popover.Group as="nav" className="hidden space-x-10 md:flex">
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <Link href={"/"} className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Início
-                        </a>
+                        </Link>
                         <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Vantagens
                         </a>
@@ -216,9 +216,9 @@ export default function Example() {
                         </Popover>
                     </Popover.Group>
                     <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-                        <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-                            Inscrever-se
-                        </a>
+                    
+                        <Link href={"/register"} ><span className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Inscrever-se</span></Link>
+                        
                         <a
                             href="#"
                             className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700"
