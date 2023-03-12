@@ -1,5 +1,3 @@
-'use client'
-import Link from "next/link"
 
 export default function RootLayout({
   children,
@@ -14,7 +12,6 @@ export default function RootLayout({
       */}
       
       <head />
-      <Link href={"/users"}>Register</Link>
       <body>{children}</body>
     </html>
   )

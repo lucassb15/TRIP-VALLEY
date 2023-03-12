@@ -1,5 +1,8 @@
 import Header from "@/components/header";
 import Input from "@/components/form/input";
+import Submit from "@/components/form/submit";
+import Hero from "@/components/form/hero";
+import HeaderForm from "@/components/form/headerForm";
 import "../../../styles/global.css"
 
 export const metadata = {
@@ -9,20 +12,33 @@ export const metadata = {
 export default function UserRegister() {
     return (
         <>
-            <Header></Header>
-            <div>
-                <h1>Crie sua conta</h1>
-                <p>Preencha os campos abaixo para criar sua conta.</p>
-            </div>
-            <div className="flex flex-col items-center justify-left">
-                <Input iconName="user" type="text" name="name" placeholder="Nome completo" />
-                <Input iconName="mail" type="email" name="email" placeholder="E-mail" />
-                <Input iconName="mail" type="email" name="confirmEmail" placeholder="Confirmar e-mail" />
-                <Input iconName="password" type="password" name="password" placeholder="Senha" />
-                <Input iconName="password" type="password" name="confirmPassword" placeholder="Confirmar senha" />
-                <p>Ao clicar em <span className="text-blue-400 font-medium">Continuar</span> você declara que leu e
-                    aceita os <span className="text-blue-400 font-medium">termos e condições de uso</span> da Trip Valley.</p>
-                <input type="submit" value="Confirmar" />
+            <HeaderForm></HeaderForm>
+            <div className=" flex h-screen">
+                <div className="w-full ">
+                    <Hero></Hero>
+                </div>
+                <div className="w-3/5">
+                    <div className=" container flex flex-col justify-center items-center mt-10">
+                        <div className="text-left mb-4">
+                            <h1 className="text-gray-700 font-bold text-3xl mb-4">Crie sua conta</h1>
+                            <p className="text-gray-500">Preencha os campos abaixo para criar sua conta.</p>
+                        </div>
+                    </div>
+                    <div className="container px-10 flex flex-col justify-center items-center">
+                        <div className="max-w-lg">
+                            <Input iconName="user" type="text" name="name" placeholder="Nome completo" />
+                            <Input iconName="mail" type="email" name="email" placeholder="E-mail" />
+                            <Input iconName="mail" type="email" name="confirmEmail" placeholder="Confirmar e-mail" />
+                            <Input iconName="password" type="password" name="password" placeholder="Senha" />
+                            <Input iconName="password" type="password" name="confirmPassword" placeholder="Confirmar senha" />
+                            <p className="mt-5">Ao clicar em <span className="text-blue-400 font-medium">Continuar</span> você declara que leu e
+                                aceita os <span className="text-blue-400 font-medium">termos e condições de uso</span> da Trip Valley.</p>
+
+                            <Submit type="submit" name="submit" value="Continuar" />
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )
