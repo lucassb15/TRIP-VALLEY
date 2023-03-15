@@ -18,7 +18,3 @@ export function Submit({ ...rest }: InputProps): JSX.Element {
 }
 
 export default Submit;
-
-// <input className=" py-3 px-4 rounded-lg text-sm bg-500-blue text-white bg-blue-500 "
-//             {...rest}
-//         />
