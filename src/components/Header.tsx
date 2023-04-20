@@ -87,13 +87,13 @@ function classNames(...classes: any): any {
 
 export default function Example(): JSX.Element {
     return (
-        <Popover className="static bg-white">
+        <Popover className="fixed w-full z-10 bg-black bg-opacity-40">
             <div className="mx-auto px-0">
                 <div className="flex items-center justify-between border-b-2 border-gray-200 py-6 md:justify-start md:space-x-10 px-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <a href="#">
                             <span className="sr-only">Trip Valley</span>
-                            <h1 className='font-bold text-2xl'>TRIP<span className='text-blue-600'>valley</span><span>.</span></h1>
+                            <h1 className='font-black text-2xl text-blue-600'>TRIP<span className="text-white">valley</span><span>.</span></h1>
                         </a>
                     </div>
                     <div className="-my-2 -mr-2 md:hidden">
@@ -103,13 +103,10 @@ export default function Example(): JSX.Element {
                         </Popover.Button>
                     </div>
                     <Popover.Group as="nav" className="hidden space-x-10 md:flex">
-                        <Link href={"/"} className="text-base font-medium text-gray-500 hover:text-gray-900">
-                            Início
-                        </Link>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <a href="#" className="text-base font-semibold text-white transition hover:hover:text-blue-600">
                             Vantagens
                         </a>
-                        <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                        <a href="#" className="text-base font-semibold text-white transition hover:hover:text-blue-600">
                             Pacotes
                         </a>
                         <Popover className="relative">
@@ -117,15 +114,15 @@ export default function Example(): JSX.Element {
                                 <>
                                     <Popover.Button
                                         className={classNames(
-                                            open ? 'text-gray-900' : 'text-gray-500',
-                                            'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+                                            open ? 'text-white' : 'text-white',
+                                            'group inline-flex items-center rounded-md transition text-base font-semibold hover:text-blue-600 focus-visible:hidden border-none focus:hidden'
                                         )}
                                     >
                                         <span>Serviços</span>
                                         <ChevronDownIcon
                                             className={classNames(
-                                                open ? 'text-gray-600' : 'text-gray-400',
-                                                'ml-2 h-5 w-5 group-hover:text-gray-500'
+                                                open ? 'hover:text-blue-600' : 'text-white',
+                                                'ml-2 h-5 w-5 group-hover:hover:text-blue-600'
                                             )}
                                             aria-hidden="true"
                                         />
@@ -151,7 +148,7 @@ export default function Example(): JSX.Element {
                                                         >
                                                             <item.icon className="h-6 w-6 flex-shrink-0 text-blue-600" aria-hidden="true" />
                                                             <div className="ml-4">
-                                                                <p className="text-base font-medium text-gray-900">{item.name}</p>
+                                                                <p className="text-base font-semibold text-gray-900">{item.name}</p>
                                                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                                                             </div>
                                                         </a>
@@ -168,15 +165,15 @@ export default function Example(): JSX.Element {
                                 <>
                                     <Popover.Button
                                         className={classNames(
-                                            open ? 'text-gray-900' : 'text-gray-500',
-                                            'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+                                            open ? 'text-gray-900' : 'text-white',
+                                            'group inline-flex items-center transition rounded-md text-base font-semibold hover:text-blue-600  focus-visible:hidden border-hidden focus:hidden'
                                         )}
                                     >
                                         <span>Contatos</span>
                                         <ChevronDownIcon
                                             className={classNames(
-                                                open ? 'text-gray-600' : 'text-gray-400',
-                                                'ml-2 h-5 w-5 group-hover:text-gray-500'
+                                                open ? 'text-white' : 'text-white',
+                                                'ml-2 h-5 w-5 group-hover:text-white'
                                             )}
                                             aria-hidden="true"
                                         />
@@ -216,12 +213,9 @@ export default function Example(): JSX.Element {
                         </Popover>
                     </Popover.Group>
                     <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-                    
-                        <Link href={"/register"} ><span className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Inscrever-se</span></Link>
-                        
                         <Link
                             href="/login"
-                            className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-blue-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-blue-700"
+                            className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-blue-500 px-12 py-2 text-base font-semibold text-white shadow-sm hover:bg-blue-700 transition"
                         >
                             Entrar
                         </Link>
@@ -242,12 +236,6 @@ export default function Example(): JSX.Element {
                     <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="px-5 pt-5 pb-6">
                             <div className="flex items-center justify-between">
-                                <div>
-                                    <a href="#">
-                                        <span className="sr-only">Trip Valley</span>
-                                        <h1 className='font-bold text-2xl'>TRIP<span className='text-blue-600'>valley</span><span>.</span></h1>
-                                    </a>
-                                </div>
                                 <div className="-mr-2">
                                     <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                                         <span className="sr-only">Close menu</span>
