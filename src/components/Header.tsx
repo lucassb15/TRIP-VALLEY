@@ -104,9 +104,6 @@ export default function Example(): JSX.Element {
                     </div>
                     <Popover.Group as="nav" className="hidden space-x-10 md:flex">
                         <a href="#" className="text-base font-semibold text-white transition hover:hover:text-blue-600">
-                            Vantagens
-                        </a>
-                        <a href="#" className="text-base font-semibold text-white transition hover:hover:text-blue-600">
                             Pacotes
                         </a>
                         <Popover className="relative">
@@ -215,7 +212,7 @@ export default function Example(): JSX.Element {
                     <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
                         <Link
                             href="/login"
-                            className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-blue-500 px-12 py-2 text-base font-semibold text-white shadow-sm hover:bg-blue-700 transition"
+                            className="ml-8 inline-flex shadow-lg items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-blue-500 px-12 py-2 text-base font-semibold text-white hover:bg-blue-700 transition"
                         >
                             Entrar
                         </Link>

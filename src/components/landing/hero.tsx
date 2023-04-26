@@ -8,7 +8,7 @@ export function Hero(): JSX.Element {
                 <h1 className="text-gray-50 w-auto">Defina sua próxima <span className="text-yellow-400">viagem</span> de maneira simples e fácil</h1>
             </div>
             <div className="relative items-center justify-center flex bottom-36 z-20">
-                <img className="w-max object-fill" src="/image/box-ld.png" alt="" />
+                <img className=" object-fill" src="/image/box-ld.png" alt="" />
             </div>
         </div>
     )

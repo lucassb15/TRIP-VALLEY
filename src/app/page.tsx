@@ -1,8 +1,8 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/landing/hero";
-import Title from "@/components/title/title";
 import Destiny from "@/components/landing/destiny";
+import Title from "@/components/title/title";
 import "../styles/global.css"
 
 export const metadata = {
@@ -14,10 +14,9 @@ export default function Home() {
     <>
       <Header></Header>
       <Hero></Hero>
-      <Title
-      title="Destinos principais"
-      ></Title>
-      <Destiny></Destiny>
+      
+        <Title title="Destinos principais"></Title>
+        <Destiny></Destiny>
       <Footer></Footer>
     </>
   )
