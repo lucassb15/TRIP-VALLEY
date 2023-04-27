@@ -12,6 +12,12 @@
   width: 10px;
 }
 
+@media (min-width: 1280px){
+  .lg\:gap-lg{
+    gap: 14rem !important;
+  }
+}
+
 /* estilo da trilha da barra de rolagem */
 ::-webkit-scrollbar-track {
   background-color: rgba(24, 95, 252, 0.10); /* cor de fundo da trilha */
