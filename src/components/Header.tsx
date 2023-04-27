@@ -85,7 +85,7 @@ function classNames(...classes: any): any {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Example(): JSX.Element {
+export default function Header(): JSX.Element {
     return (
         <Popover className="fixed w-full z-50 bg-black bg-opacity-40">
             <div className="mx-auto px-0">

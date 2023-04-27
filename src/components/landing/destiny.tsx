@@ -1,5 +1,5 @@
 
-export function Hero(): JSX.Element {
+export function Destiny(): JSX.Element {
     return (
         <div className="lg:w-full lg:mx-auto md:w-screen">
             <div className="flex flex-col md:flex-row justify-center md:mr-7 lg:ml-2 items-center md:gap-4 lg:gap-8">
@@ -38,4 +38,4 @@ export function Hero(): JSX.Element {
         </div>
     )
 }
-export default Hero;
+export default Destiny;
