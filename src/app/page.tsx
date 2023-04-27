@@ -16,7 +16,6 @@ export default function Home() {
     <>
       <Header></Header>
       <Hero></Hero>
-      <Title title="Destinos principais"></Title>
       <Destiny></Destiny>
       <Slider></Slider>
       <Footer></Footer>

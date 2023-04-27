@@ -1,19 +1,10 @@
-#app {
-height: 100%;
-}
-html,
-body {
-position: relative;
-height: 100%;
-}
-
-
 .swiper {
-width: 80%;
-height: 100%;
+width: 75%;
+height: 50%;
 }
 
 .swiper-slide {
+margin-top: 1.2rem;
 text-align: center;
 font-size: 18px;
 background: #fff;
@@ -22,11 +13,9 @@ background: #fff;
 display: flex;
 justify-content: center;
 align-items: center;
+user-select:none;
 }
 
-.swiper-slide img {
-display: block;
-width: 100%;
-height: 100%;
-object-fit: cover;
+.swiper-button-prev, .swiper-button-next {
+color: #2563EB;
 }
