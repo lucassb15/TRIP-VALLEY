@@ -1,0 +1,27 @@
+.swiper {
+width: 75%;
+}
+
+.swiper-slide {
+margin-top: 1.2rem;
+text-align: center;
+font-size: 18px;
+background: #fff;
+
+  /* Center slide text vertically */
+display: flex;
+justify-content: center;
+align-items: center;
+user-select:none;
+}
+
+.swiper-button-prev, .swiper-button-next {
+color: #374151;
+}
+
+@media only screen and (min-width: 460px)  {
+  .swiper {
+width: 66%;
+height: 50%;
+}
+}
