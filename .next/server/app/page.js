@@ -331,22 +331,12 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 6694:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 9446, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 2030, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3258, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 6862, 23))
-
-/***/ }),
-
-/***/ 1176:
+/***/ 3556:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4276));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1365));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1773))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1773));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1365))
 
 /***/ }),
 
@@ -758,8 +748,8 @@ function Home() {
                                                     stroke: "gray",
                                                     className: "w-6 h-6",
                                                     children: /*#__PURE__*/ jsx_runtime.jsx("path", {
-                                                        "stroke-linecap": "round",
-                                                        "stroke-linejoin": "round",
+                                                        strokeLinecap: "round",
+                                                        strokeLinejoin: "round",
                                                         d: "M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
                                                     })
                                                 })
@@ -782,12 +772,12 @@ function Home() {
                                                     xmlns: "http://www.w3.org/2000/svg",
                                                     fill: "none",
                                                     viewBox: "0 0 24 24",
-                                                    "stroke-width": "1.5",
+                                                    strokeWidth: 1.5,
                                                     stroke: "white",
                                                     className: "w-6 h-6",
                                                     children: /*#__PURE__*/ jsx_runtime.jsx("path", {
-                                                        "stroke-linecap": "round",
-                                                        "stroke-linejoin": "round",
+                                                        strokeLinecap: "round",
+                                                        strokeLinejoin: "round",
                                                         d: "M8.25 4.5l7.5 7.5-7.5 7.5"
                                                     })
                                                 })
@@ -1691,7 +1681,7 @@ function Hero({ title  }) {
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [227,851,384], () => (__webpack_exec__(9551)));
+var __webpack_exports__ = __webpack_require__.X(0, [227,851,813], () => (__webpack_exec__(9551)));
 module.exports = __webpack_exports__;
 
 })();
