@@ -1,3 +1,1 @@
-self.__RSC_CSS_MANIFEST={
-  "__entry_css_mods__": {}
-}
+self.__RSC_CSS_MANIFEST={"__entry_css_mods__":{"C:\\Users\\Lucas Barbosa\\Documents\\GitHub\\TRIP-VALLEY\\src\\app\\page":["C:\\Users\\Lucas Barbosa\\Documents\\GitHub\\TRIP-VALLEY\\src\\styles\\global.css"]},"C:\\Users\\Lucas Barbosa\\Documents\\GitHub\\TRIP-VALLEY\\src\\app\\page.tsx":["C:\\Users\\Lucas Barbosa\\Documents\\GitHub\\TRIP-VALLEY\\src\\styles\\global.css"]}
