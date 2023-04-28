@@ -6,33 +6,40 @@
 * {
   font-family: 'Archivo', sans-serif;
 }
+@layer {
+  /* estilo da barra de rolagem */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 
-/* estilo da barra de rolagem */
-::-webkit-scrollbar {
-  width: 10px;
+  /* estilo da trilha da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background-color: rgba(24, 95, 252, 0.10); /* cor de fundo da trilha */
+  }
+
+  /* estilo do "polegar" (a parte da barra de rolagem que é arrastada) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #9CA3AF; /* cor do polegar */
+    border-radius: 4px; /* borda arredondada do polegar */
+    border: 0px solid #f1f1f1; /* borda do polegar */
+  }
+  ::-webkit-scrollbar-thumb:hover{
+      background-color: #6B7280;
+  }
+  /* estilo do canto inferior direito da barra de rolagem */
+  ::-webkit-scrollbar-corner {
+    background-color: #f1f1f1; /* cor de fundo do canto */
+  }
+  .shadow-fdbcard {
+    box-shadow: 0px 4px 12px 4px rgba(0, 0, 0, 0.25);
+  }
 }
+
+
 
 @media (min-width: 1280px){
   .lg\:gap-lg{
     gap: 14rem !important;
   }
-}
 
-/* estilo da trilha da barra de rolagem */
-::-webkit-scrollbar-track {
-  background-color: rgba(24, 95, 252, 0.10); /* cor de fundo da trilha */
-}
-
-/* estilo do "polegar" (a parte da barra de rolagem que é arrastada) */
-::-webkit-scrollbar-thumb {
-  background-color: #2563EB; /* cor do polegar */
-  border-radius: 5px; /* borda arredondada do polegar */
-  border: 0px solid #f1f1f1; /* borda do polegar */
-}
-::-webkit-scrollbar-thumb:hover{
-    background-color: rgba(71, 127, 251, 1);
-}
-/* estilo do canto inferior direito da barra de rolagem */
-::-webkit-scrollbar-corner {
-  background-color: #f1f1f1; /* cor de fundo do canto */
 }

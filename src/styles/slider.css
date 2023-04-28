@@ -1,6 +1,5 @@
 .swiper {
 width: 75%;
-height: 50%;
 }
 
 .swiper-slide {
@@ -17,5 +16,12 @@ user-select:none;
 }
 
 .swiper-button-prev, .swiper-button-next {
-color: #2563EB;
+color: #374151;
+}
+
+@media only screen and (min-width: 460px)  {
+  .swiper {
+width: 66%;
+height: 50%;
+}
 }

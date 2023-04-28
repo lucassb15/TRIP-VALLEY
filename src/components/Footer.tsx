@@ -4,9 +4,9 @@ import { FaTwitter } from 'react-icons/fa';
 
 function Footer(): JSX.Element {
     return (
-        <footer className="text-gray-600 py-5 px-5 md:py-10 md:px-10 lg:py-10 lg:px-10 md:gap-32 sm:gap-24  gap-10 flex flex-row  justify-center items-center w-auto max-w-max border-t-2 mt-auto">
+        <footer className="text-gray-600 max-w-[1500px] py-5 px-5  gap-10 flex flex-row justify-center items-center w-auto border-t-2 mt-auto sm:gap-16 md:py-10 md:px-10 md:gap-32 lg:py-10 lg:px-10">
 
-            <div className="flex flex-row md:w-full sm:w-full lg:w-full sm:gap-10 md:gap-14 lg:gap-24">
+            <div className="flex flex-row md:w-max sm:w-max lg:w-max sm:gap-10 md:gap-14 lg:gap-24">
                 <div>
                     <h1 className="lg:text-3xl font-black text-blue-600">TRIP<span className='text-gray-500'>valley</span>.</h1>
                 </div>

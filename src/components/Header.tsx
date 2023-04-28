@@ -87,7 +87,7 @@ function classNames(...classes: any): any {
 
 export default function Header(): JSX.Element {
     return (
-        <Popover className="fixed w-full z-50 bg-black bg-opacity-40">
+        <Popover className="fixed top-0 w-full z-50 bg-black bg-opacity-40">
             <div className="mx-auto px-0">
                 <div className="flex items-center justify-between border-gray-200 py-6 md:justify-start md:space-x-10 px-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
