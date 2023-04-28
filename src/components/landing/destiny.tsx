@@ -3,7 +3,7 @@ import Title from "@/components/title/title";
 
 export function Destiny(): JSX.Element {
     return (
-        <div className="lg:w-full lg:mx-auto md:w-screen select-none mb-32 mt-20 ">
+        <div className="lg:w-full lg:mx-auto md:w-full select-none mb-32 mt-20 max-w-[1000px] ">
             <div className="flex flex-col md:flex-row justify-center md:mr-7 lg:ml-6 items-center md:gap-4 lg:gap-8">
                 <div className="hidden md:flex md:max-w-xs">
                     <div className="relative">

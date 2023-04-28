@@ -17,6 +17,7 @@ export default function Home() {
     <>
       <Header></Header>
       <Hero></Hero>
+      <section className="mx-auto max-w-[1440px]">
       <Destiny></Destiny>
       <Slider></Slider>
       <div className="flex justify-center">
@@ -51,6 +52,7 @@ export default function Home() {
           </form>
         </div>
       </div>
+      </section>
       <Footer></Footer>
     </>
   )
