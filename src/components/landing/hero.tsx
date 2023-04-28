@@ -1,3 +1,4 @@
+
 export function Hero(): JSX.Element {
     return (
         <div className="hidden md:block lg:block select-none ">
