@@ -35,24 +35,17 @@ function Footer(): JSX.Element {
                         <h4 className='text-sm'>contato@tripvalley.com.br</h4>
                     </div>
                 </div>
-
-                {/* socials */}
-                <div className='sm:w-max md:w-max w-max displ lg:block md:block hidden'>
-                    <div className='mb-2'>
-                        <h3 className='text-gray-800 font-semibold'>Siga nossas redes</h3>
-                    </div>
-                    <div className="grid grid-cols-3 w-32">
-                        <a href="https://instagram.com" target={'_blank'}>
-                            <FaInstagram className='text-gray-800 text-2xl hover:text-blue-600 transition duration-300 ' />
-                        </a>
-                        <a href="https://facebook.com" target={'_blank'}>
-                            <FaFacebookF className='text-gray-800 text-2xl hover:text-blue-600 transition duration-300 ' />
-                        </a>
-                        <a href="https://facebook.com" target={'_blank'}>
-                            <FaTwitter className='text-gray-800 text-2xl hover:text-blue-600 transition duration-300 ' />
-                        </a>
-                    </div>
-                </div>
+            </div>
+            <div className="grid grid-cols-3  ">
+                <a href="https://instagram.com" target={'_blank'} rel="noreferrer noopener">
+                    <FaInstagram className='text-white text-2xl hover:text-black transition duration-300 ' />
+                </a>
+                <a href="https://facebook.com" target={'_blank'} rel="noreferrer noopener">
+                    <FaFacebookF className='text-white text-2xl hover:text-black transition duration-300 ' />
+                </a>
+                <a href="https://facebook.com" target={'_blank'} rel="noreferrer noopener">
+                    <FaTwitter className='text-white text-2xl hover:text-black transition duration-300 ' />
+                </a>
             </div>
         </footer>
     );
