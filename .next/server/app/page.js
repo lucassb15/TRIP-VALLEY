@@ -331,12 +331,12 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 3556:
+/***/ 1176:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4276));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1773));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1365))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1365));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1773))
 
 /***/ }),
 
@@ -451,7 +451,7 @@ function Footer() {
                     /*#__PURE__*/ jsx_runtime.jsx("a", {
                         href: "https://instagram.com",
                         target: "_blank",
-                        rel: "noreferrer",
+                        rel: "noreferrer noopener",
                         children: /*#__PURE__*/ jsx_runtime.jsx(index_esm/* FaInstagram */.Zf_, {
                             className: "text-white text-2xl hover:text-black transition duration-300 "
                         })
@@ -459,7 +459,7 @@ function Footer() {
                     /*#__PURE__*/ jsx_runtime.jsx("a", {
                         href: "https://facebook.com",
                         target: "_blank",
-                        rel: "noreferrer",
+                        rel: "noreferrer noopener",
                         children: /*#__PURE__*/ jsx_runtime.jsx(index_esm/* FaFacebookF */.tBk, {
                             className: "text-white text-2xl hover:text-black transition duration-300 "
                         })
@@ -467,7 +467,7 @@ function Footer() {
                     /*#__PURE__*/ jsx_runtime.jsx("a", {
                         href: "https://facebook.com",
                         target: "_blank",
-                        rel: "noreferrer",
+                        rel: "noreferrer noopener",
                         children: /*#__PURE__*/ jsx_runtime.jsx(index_esm/* FaTwitter */.fWC, {
                             className: "text-white text-2xl hover:text-black transition duration-300 "
                         })

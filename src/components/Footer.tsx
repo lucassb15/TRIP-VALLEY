@@ -37,13 +37,13 @@ function Footer(): JSX.Element {
                 </div>
             </div>
             <div className="grid grid-cols-3  ">
-                <a href="https://instagram.com" target={'_blank'} rel="noreferrer">
+                <a href="https://instagram.com" target={'_blank'} rel="noreferrer noopener">
                     <FaInstagram className='text-white text-2xl hover:text-black transition duration-300 ' />
                 </a>
-                <a href="https://facebook.com" target={'_blank'} rel="noreferrer">
+                <a href="https://facebook.com" target={'_blank'} rel="noreferrer noopener">
                     <FaFacebookF className='text-white text-2xl hover:text-black transition duration-300 ' />
                 </a>
-                <a href="https://facebook.com" target={'_blank'} rel="noreferrer">
+                <a href="https://facebook.com" target={'_blank'} rel="noreferrer noopener">
                     <FaTwitter className='text-white text-2xl hover:text-black transition duration-300 ' />
                 </a>
             </div>
