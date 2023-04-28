@@ -3,8 +3,8 @@ import Title from "@/components/title/title";
 
 export function Destiny(): JSX.Element {
     return (
-        <div className="lg:w-11/12 lg:mx-auto md:w-11/12 select-none mb-32 mt-20 max-w-[1050px] ">
-            <div className="flex flex-col w-auto md:flex-row justify-center md:mr-7 lg:ml-6 items-center md:gap-4 lg:gap-8">
+        <div className="select-none mb-32 mt-20  max-w-[1400px] w-full flex justify-center mx-auto">
+            <div className="flex flex-col w-auto md:flex-row justify-between items-center md:gap-4 lg:gap-8">
                 <div className="hidden md:flex md:max-w-xs">
                     <div className="relative">
                         <div className="absolute -top-20">

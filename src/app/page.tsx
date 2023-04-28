@@ -24,8 +24,9 @@ export default function Home() {
         <img className="w-11/12" src="/image/bg/pinBG.png" alt="" />
       </div>
       <SliderFeedBack></SliderFeedBack>
+      </section>
       <div>
-        <div className="w-full mb-32 mt-20 relative">
+        <div className="mb-32 mt-20 relative w-full">
           <img className="" src="/image/bg/newsletterBG.png" alt="" />
           <div className="text-white flex flex-col justify-center items-center absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-auto">
             <div className="mb-5 w-auto">
@@ -52,7 +53,6 @@ export default function Home() {
           </form>
         </div>
       </div>
-      </section>
       <Footer></Footer>
     </>
   )

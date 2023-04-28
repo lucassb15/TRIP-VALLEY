@@ -48,7 +48,7 @@ export function SliderFeedBack(): JSX.Element {
                 autoplay={{
                     delay: 2000
                 }}
-                className="mb-32 mt-20 max-w-[1200px]">
+                className="mb-32 mt-10 w-full max-w-[985px]">
                 <SwiperSlide>
                     <div>
                         <Feedback

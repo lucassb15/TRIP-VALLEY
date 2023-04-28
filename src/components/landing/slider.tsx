@@ -47,7 +47,7 @@ export function Slider(): JSX.Element {
                 autoplay={{
                     delay: 2000
                 }}
-                className="mb-32 mt-20 max-w-[1100px]">
+                className="mb-10 mt-20 flex flex-col justify-start w-full max-w-[1000px]">
                 <SwiperSlide>
                     <div className="mr-10 ml-10">
                         <img className="rounded-lg w-full" src="/image/slider/image-2.png" alt="" />
