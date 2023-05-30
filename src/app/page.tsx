@@ -30,7 +30,7 @@ export default function Home() {
           <img className="" src="/image/bg/newsletterBG.png" alt="" />
           <div className="text-white flex flex-col justify-center items-center absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-auto">
             <div className="mb-5 w-auto">
-            <h2 className="text-lg md:text-4xl lg:text-6xl font-bold">Inscreva-se e fique atualizado!</h2>
+            <h2 className="text-lg md:text-4xl lg:text-6xl font-bold">Inscreva-se e fique atualizado!!</h2>
             <p className=" text-base md:text-xl lg:text-xl font-extralight">Receba todas atualizações e as melhores ofertas em seu e-mail.</p>
             </div>
           </div>
